@@ -1,6 +1,90 @@
 # CarlandsCompanyID.github.io
 Website Resmi CarlandsCompanYID
 
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarlandsCompanyID - Website Resmi</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      color: #003366;
+    }
+    .warning {
+      background-color: #ffecec;
+      color: #cc0000;
+      padding: 1rem;
+      border-left: 5px solid #cc0000;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #003366;
+      color: white;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Selamat Datang di Website Resmi CarlandsCompanyID</h1>
+  </header>
+
+  <section>
+    <div class="warning">
+      <strong>⚠️ Peringatan:</strong><br>
+      Ini adalah <strong>situs resmi</strong> milik CarlandsCompanyID. Situs selain <code>carlandscompanyid</code> adalah <strong>tidak resmi atau palsu</strong>.
+    </div>
+
+    <h2>📌 Tentang Kami</h2>
+    <p><strong>CarlandsCompanyID</strong> didirikan pada tahun <strong>2020</strong> oleh seorang pelajar asal <strong>Jawa Tengah</strong>. Kami adalah perusahaan digital yang fokus pada inovasi, pengembangan game, dan layanan berbasis teknologi.</p>
+
+    <h2>🎯 Misi Kami</h2>
+    <p>Membangun ekosistem digital yang kreatif dan inovatif, serta memberikan solusi teknologi berkualitas tinggi untuk semua kalangan.</p>
+
+    <h2>🚀 Apa yang Kami Tawarkan</h2>
+    <ul>
+      <li>🌟 Pengembangan Game & Roleplay Server</li>
+      <li>💼 Layanan Digital & Kreatif</li>
+      <li>🛠️ Inovasi Teknologi Masa Depan</li>
+    </ul>
+
+    <h2>🤝 Bergabunglah Bersama Kami</h2>
+    <p>Kami terbuka untuk kolaborasi, mitra kerja, dan talenta baru yang ingin tumbuh bersama membangun masa depan digital Indonesia.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 CarlandsCompanyID. Semua Hak Dilindungi.
+  </footer>
+</body>
+</html>
+
 
 <html lang="id">
 <head>
