@@ -1,22 +1,5 @@
 # CarlandsCompanyID.github.io
 Website Resmi CarlandsCompanYID
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <html lang="id">
 <head>
   <meta charset="UTF-8">
@@ -47,14 +30,6 @@ Website Resmi CarlandsCompanYID
     h1, h2, h3 {
       color: #003366;
     }
-    .warning {
-      background-color: #ffecec;
-      color: #cc0000;
-      padding: 1rem;
-      border-left: 5px solid #cc0000;
-      margin-bottom: 2rem;
-      border-radius: 8px;
-    }
     ul {
       padding-left: 1.5rem;
     }
@@ -71,6 +46,8 @@ Website Resmi CarlandsCompanYID
   <header>
     <h1>Selamat Datang di Website Resmi CarlandsCompanyID</h1>
   </header>
+
+  <section>
     <h2>📌 Tentang Kami</h2>
     <p><strong>CarlandsCompanyID</strong> didirikan pada tahun <strong>2020</strong> oleh seorang pelajar asal <strong>Jawa Tengah</strong>. Kami adalah perusahaan digital yang fokus pada inovasi, pengembangan game, dan layanan berbasis teknologi.</p>
 
@@ -93,49 +70,6 @@ Website Resmi CarlandsCompanYID
   </footer>
 </body>
 </html>
-
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Informasi CarlandsCompanyID</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #1f1c2c, #928dab);
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    h1 {
-      font-size: 48px;
-      text-align: center;
-      color: transparent;
-      background-image: linear-gradient(90deg, #00e0ff, #0072ff, #00e0ff);
-      background-clip: text;
-      -webkit-background-clip: text;
-      animation: glow 3s ease-in-out infinite alternate;
-    }
-
-    @keyframes glow {
-      0% {
-        text-shadow: 0 0 5px #00e0ff, 0 0 10px #0072ff, 0 0 15px #00e0ff;
-      }
-      100% {
-        text-shadow: 0 0 10px #00e0ff, 0 0 20px #0072ff, 0 0 30px #00e0ff;
-      }
-    }
-  </style>
-</head>
-<body>
-  <h1>SEMUA INFORMASI<br>CARLANDSCOMPANYID</h1>
-</body>
-</html>
-
 
 <html lang="id">
 <head>
