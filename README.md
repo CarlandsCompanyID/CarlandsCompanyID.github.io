@@ -3,45 +3,108 @@ Website Resmi CarlandsCompanYID
 
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CarlandsCompanyID - Website Resmi</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
       color: #333;
+      line-height: 1.6;
     }
     header {
       background-color: #003366;
       color: white;
-      padding: 2rem;
+      padding: 3rem 1rem;
       text-align: center;
     }
+    header h1 {
+      font-size: 2.5rem;
+    }
     section {
-      max-width: 800px;
+      max-width: 900px;
       margin: 2rem auto;
       background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 2.5rem;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     }
-    h1, h2, h3 {
+    h2 {
+      margin-top: 1.5rem;
       color: #003366;
     }
     ul {
-      padding-left: 1.5rem;
-    
+      margin-left: 1.5rem;
+      list-style: none;
+    }
+    ul li {
+      margin-bottom: 0.75rem;
+    }
+    ul li::before {
+      content: "\2022";
+      color: #003366;
+      font-weight: bold;
+      display: inline-block; 
+      width: 1em;
+      margin-left: -1em;
+    }
+    .warning {
+      background-color: #fff3cd;
+      color: #856404;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+      border: 1px solid #ffeeba;
     }
     footer {
       text-align: center;
-      padding: 1rem;
+      padding: 1.5rem;
       background-color: #003366;
       color: white;
       margin-top: 3rem;
-    
+    }
+    .social-buttons {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .social-buttons a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 20px;
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .youtube { background-color: #FF0000; }
+    .youtube:hover { background-color: #cc0000; }
+    .instagram { background-color: #C13584; }
+    .instagram:hover { background-color: #9c2a6a; }
+    .tiktok { background-color: #010101; }
+    .tiktok:hover { background-color: #333; }
+    .form-section {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .form-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #4285F4;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+    .form-button:hover {
+      background-color: #3367D6;
     }
   </style>
 </head>
@@ -52,7 +115,7 @@ Website Resmi CarlandsCompanYID
 
   <section>
     <h2>📌 Tentang Kami</h2>
-    <p><strong>CarlandsCompanyID</strong> didirikan pada tahun <strong>2020</strong> oleh seorang pelajar asal <strong>Jawa Tengah</strong>. Kami adalah perusahaan digital yang fokus pada inovasi, pengembangan game, dan layanan berbasis teknologi.</p>
+    <p><strong>CarlandsCompanyID</strong> didirikan pada tahun <strong>2020</strong> oleh seorang pelajar asal <strong>Jawa Tengah</strong>. Kami adalah perusahaan digital yang berfokus pada inovasi, pengembangan game, serta layanan dan solusi teknologi.</p>
 
     <h2>🎯 Misi Kami</h2>
     <p>Membangun ekosistem digital yang kreatif dan inovatif, serta memberikan solusi teknologi berkualitas tinggi untuk semua kalangan.</p>
@@ -66,6 +129,24 @@ Website Resmi CarlandsCompanYID
 
     <h2>🤝 Bergabunglah Bersama Kami</h2>
     <p>Kami terbuka untuk kolaborasi, mitra kerja, dan talenta baru yang ingin tumbuh bersama membangun masa depan digital Indonesia.</p>
+
+    <div class="form-section">
+      <h2>📝 Pendaftaran Akun Pencoblosan</h2>
+      <p>Klik tombol di bawah untuk menuju Google Form.</p>
+      <a href="https://forms.gle/1iyHNtXXghsjmqc9A" target="_blank" class="form-button">Buka Formulir</a>
+    </div>
+
+    <div class="social-buttons">
+      <h2>🌐 Ikuti Kami di Sosial Media</h2>
+      <a href="https://www.youtube.com/@carlandsid" class="youtube" target="_blank">YouTube</a>
+      <a href="https://www.instagram.com/carlandscompanyid/" class="instagram" target="_blank">Instagram</a>
+      <a href="https://www.tiktok.com/@carlandscompanyid" class="tiktok" target="_blank">TikTok</a>
+    </div>
+
+    <div class="warning">
+      <strong>⚠️ Peringatan:</strong><br>
+      Ini adalah <strong>situs resmi</strong> milik CarlandsCompanyID. Situs selain <code>carlandscompanyid</code> adalah <strong>tidak resmi atau palsu</strong>.
+    </div>
   </section>
 
   <footer>
@@ -73,165 +154,3 @@ Website Resmi CarlandsCompanYID
   </footer>
 </body>
 </html>
-
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pendaftaran Akun Pencoblosan</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f4f8;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    .container {
-      text-align: center;
-      background-color: #ffffff;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    .title {
-      font-size: 24px;
-      font-weight: bold;
-      color: #333333;
-      margin-bottom: 10px;
-    }
-
-    .subtitle {
-      font-size: 18px;
-      color: #555555;
-      margin-bottom: 20px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 12px 24px;
-      background-color: #4285F4;
-      color: white;
-      text-decoration: none;
-      font-size: 16px;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: #3367D6;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="title">Pendaftaran Akun Pencoblosan</div>
-    <div class="subtitle">Silakan Isi Formulir</div>
-    <p>Klik tombol di bawah untuk menuju Google Form.</p>
-    <a href="https://forms.gle/1iyHNtXXghsjmqc9A" target="_blank" class="button">Buka Google Form</a>
-  </div>
-</body>
-</html>
-
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>YouTube</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f3f3f3;
-      text-align: center;
-      padding-top: 50px;
-    }
-    a {
-      text-decoration: none;
-      background-color: #FF0000;
-      color: white;
-      padding: 15px 25px;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-    a:hover {
-      background-color: #cc0000;
-    }
-  </style>
-</head>
-<body>
-  <h1>Kunjungi YouTube Kami!</h1>
-  <a href="https://www.youtube.com/@carlandsid" target="_blank">YouTube</a>
-</body>
-</html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Instagram</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f3f3f3;
-      text-align: center;
-      padding-top: 50px;
-    }
-    a {
-      text-decoration: none;
-      background-color: #C13584;
-      color: white;
-      padding: 15px 25px;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-    a:hover {
-      background-color: #9c2a6a;
-    }
-  </style>
-</head>
-<body>
-  <h1>Kunjungi Instagram Kami!</h1>
-  <a href="https://www.instagram.com/carlandscompanyid/" target="_blank">Instagram</a>
-</body>
-</html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TikTok</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f3f3f3;
-      text-align: center;
-      padding-top: 50px;
-    }
-    a {
-      text-decoration: none;
-      background-color: #010101;
-      color: white;
-      padding: 15px 25px;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-    a:hover {
-      background-color: #333;
-    }
-  </style>
-</head>
-<body>
-  <h1>Kunjungi TikTok Kami!</h1>
-  <a href="https://www.tiktok.com/@carlandscompanyid" target="_blank">TikTok</a>
-</body>
-</html>
-<section>
-    <div class="warning">
-      <strong>⚠️ Peringatan:</strong><br>
-      Ini adalah <strong>situs resmi</strong> milik CarlandsCompanyID. Situs selain <code>carlandscompanyid</code> adalah <strong>tidak resmi atau palsu</strong>.
-    </div>
