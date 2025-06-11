@@ -3,6 +3,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CarlandsCompanyID - Website Resmi</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      lucide.createIcons();
+    });
+  </script>
   <style>
     * {
       margin: 0;
@@ -47,7 +54,7 @@
       content: "\2022";
       color: #003366;
       font-weight: bold;
-      display: inline-block;
+      display: inline-block; 
       width: 1em;
       margin-left: -1em;
     }
@@ -58,6 +65,9 @@
       border-radius: 8px;
       margin-top: 2rem;
       border: 1px solid #ffeeba;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
     footer {
       text-align: center;
@@ -134,6 +144,7 @@
   </style>
 </head>
 <body>
+
   <header>
     <h1>Selamat Datang di Website Resmi CarlandsCompanyID</h1>
   </header>
@@ -184,7 +195,35 @@
 
     <h2>Kesimpulan</h2>
     <p>Komunitas digital seperti Roblox dan lainnya bukan sekadar tempat hiburan. Mereka adalah ekosistem sosial yang membentuk generasi baru dengan cara berpikir kreatif, kolaboratif, dan digital-native. Masa depan komunitas ini akan terus berkembang seiring teknologi dan koneksi global.</p>
+
     <p class="footer">Ditulis oleh CarlandsCompany – Mendukung pertumbuhan komunitas game dan digital Indonesia.</p>
+  </div>
+
+  <div class="social-buttons">
+    <a href="https://www.youtube.com/@carlandsid" target="_blank" class="youtube">YouTube</a>
+    <a href="https://www.instagram.com/carlandscompanyid/" target="_blank" class="instagram">Instagram</a>
+    <a href="https://www.tiktok.com/@carlandscompanyid" target="_blank" class="tiktok">TikTok</a>
+  </div>
+
+  <div class="bg-gray-900 text-white font-sans flex items-center justify-center py-10">
+    <div class="space-y-4 text-center">
+      <h1 class="text-3xl font-bold mb-6">Temukan CarlandsCompany</h1>
+      <a href="https://www.youtube.com/@carlandsid" target="_blank" class="flex items-center justify-center space-x-3 px-6 py-3 rounded-2xl bg-red-600 hover:bg-red-700 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="youtube" class="w-6 h-6"></i><span>YouTube</span>
+      </a>
+      <a href="https://www.instagram.com/carlandscompanyid/" target="_blank" class="flex items-center justify-center space-x-3 px-6 py-3 rounded-2xl bg-pink-500 hover:bg-pink-600 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="instagram" class="w-6 h-6"></i><span>Instagram</span>
+      </a>
+      <a href="https://www.tiktok.com/@carlandscompanyid" target="_blank" class="flex items-center justify-center space-x-3 px-6 py-3 rounded-2xl bg-black hover:bg-gray-800 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="music" class="w-6 h-6"></i><span>TikTok</span>
+      </a>
+      <a href="https://discord.com/invite/tnzfy7tSVS" target="_blank" class="flex items-center justify-center space-x-3 px-6 py-3 rounded-2xl bg-indigo-600 hover:bg-indigo-700 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="message-circle" class="w-6 h-6"></i><span>Discord</span>
+      </a>
+      <a href="https://chat.whatsapp.com/EoyF4WTKUHB1feKjRdowss" target="_blank" class="flex items-center justify-center space-x-3 px-6 py-3 rounded-2xl bg-green-500 hover:bg-green-600 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="phone" class="w-6 h-6"></i><span>Komunitas WhatsApp</span>
+      </a>
+    </div>
   </div>
 
   <div class="warning">
@@ -196,60 +235,5 @@
     &copy; 2025 CarlandsCompanyID. Semua Hak Dilindungi.
   </footer>
 
-  <!-- Link Section in English -->
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CarlandsCompany Links</title>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-      window.addEventListener("DOMContentLoaded", () => {
-        lucide.createIcons();
-      });
-    </script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  </head>
-  <body class="bg-gray-900 text-white font-sans flex items-center justify-center min-h-screen">
-    <div class="space-y-4 text-center">
-      <h1 class="text-3xl font-bold mb-6">Temukan CarlandsCompany</h1>
-
-      <!-- YouTube -->
-      <a href="https://www.youtube.com/@carlandsid" target="_blank"
-        class="flex items-center justify-center space-x-3 px-6 py-3 rounded-2xl bg-red-600 hover:bg-red-700 transition transform hover:scale-105 shadow-lg">
-        <i data-lucide="youtube" class="w-6 h-6"></i>
-        <span>YouTube</span>
-      </a>
-
-      <!-- Instagram -->
-      <a href="https://www.instagram.com/carlandscompanyid/" target="_blank"
-        class="flex items-center justify-center space-x-3 px-6 py-3 rounded-2xl bg-pink-500 hover:bg-pink-600 transition transform hover:scale-105 shadow-lg">
-        <i data-lucide="instagram" class="w-6 h-6"></i>
-        <span>Instagram</span>
-      </a>
-
-      <!-- TikTok -->
-      <a href="https://www.tiktok.com/@carlandscompanyid" target="_blank"
-        class="flex items-center justify-center space-x-3 px-6 py-3 rounded-2xl bg-black hover:bg-gray-800 transition transform hover:scale-105 shadow-lg">
-        <i data-lucide="music" class="w-6 h-6"></i>
-        <span>TikTok</span>
-      </a>
-
-      <!-- Discord -->
-      <a href="https://discord.com/invite/tnzfy7tSVS" target="_blank"
-        class="flex items-center justify-center space-x-3 px-6 py-3 rounded-2xl bg-indigo-600 hover:bg-indigo-700 transition transform hover:scale-105 shadow-lg">
-        <i data-lucide="message-circle" class="w-6 h-6"></i>
-        <span>Discord</span>
-      </a>
-
-      <!-- WhatsApp -->
-      <a href="https://chat.whatsapp.com/EoyF4WTKUHB1feKjRdowss" target="_blank"
-        class="flex items-center justify-center space-x-3 px-6 py-3 rounded-2xl bg-green-500 hover:bg-green-600 transition transform hover:scale-105 shadow-lg">
-        <i data-lucide="phone" class="w-6 h-6"></i>
-        <span>Komunitas WhatsApp</span>
-      </a>
-    </div>
-  </body>
-  </html>
 </body>
 </html>
