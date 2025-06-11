@@ -181,7 +181,7 @@ Website Resmi CarlandsCompanYID
 </head>
 <body>
   <h1>Kunjungi YouTube Kami!</h1>
-  <a href="https://www.youtube.com/namamu" target="_blank">YouTube</a>
+  <a href="https://www.youtube.com/@carlandsid" target="_blank">YouTube</a>
 </body>
 </html>
 
@@ -213,7 +213,7 @@ Website Resmi CarlandsCompanYID
 </head>
 <body>
   <h1>Kunjungi Instagram Kami!</h1>
-  <a href="https://www.instagram.com/namamu" target="_blank">Instagram</a>
+  <a href="https://www.instagram.com/carlandscompanyid/" target="_blank">Instagram</a>
 </body>
 </html>
 
@@ -245,6 +245,6 @@ Website Resmi CarlandsCompanYID
 </head>
 <body>
   <h1>Kunjungi TikTok Kami!</h1>
-  <a href="https://www.tiktok.com/@namamu" target="_blank">TikTok</a>
+  <a href=https://www.tiktok.com/@carlandscompanyid" target="_blank">TikTok</a>
 </body>
 </html>
