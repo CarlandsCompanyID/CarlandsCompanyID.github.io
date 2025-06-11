@@ -94,8 +94,8 @@
     .instagram:hover { background-color: #9c2a6a; }
     .tiktok { background-color: #010101; }
     .tiktok:hover { background-color: #333; }
-    .background: radial-gradient(circle at top left, #5865F2, #404EED, #2C2FDD);
-     color: white;
+    .discord { background: radial-gradient(circle at top left, #5865F2, #404EED, #2C2FDD);
+     color: white; }
     .Discord:hover { background-color: #4752c4; }
     .whatsapp { background-color: #25D366; }
     .whatsapp:hover { background-color: #1ebe57; }
