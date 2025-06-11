@@ -105,7 +105,7 @@
     }
     .form-button {
       display: inline-block;
-      padding: 12px 24px;
+      padding: 24px 24px;
       background-color: #4285F4;
       color: white;
       text-decoration: none;
