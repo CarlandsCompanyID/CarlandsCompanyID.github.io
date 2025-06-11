@@ -51,10 +51,10 @@
       margin-bottom: 0.75rem;
     }
     ul li::before {
-      content: "\2022";
+      content: "•";
       color: #003366;
       font-weight: bold;
-      display: inline-block; 
+      display: inline-block;
       width: 1em;
       margin-left: -1em;
     }
@@ -63,11 +63,9 @@
       color: #856404;
       padding: 1rem;
       border-radius: 8px;
-      margin-top: 2rem;
+      margin: 2rem auto 0;
       border: 1px solid #ffeeba;
       max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
     }
     footer {
       text-align: center;
@@ -119,9 +117,10 @@
       margin: 2rem auto;
       padding: 30px;
       border-radius: 10px;
-      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    .blog-container h1, .blog-container h2 {
+    .blog-container h1,
+    .blog-container h2 {
       color: #2c3e50;
     }
     .blog-container p {
@@ -144,7 +143,6 @@
   </style>
 </head>
 <body>
-
   <header>
     <h1>Selamat Datang di Website Resmi CarlandsCompanyID</h1>
   </header>
@@ -158,19 +156,13 @@
 
     <h2>🚀 Apa yang Kami Tawarkan</h2>
     <ul>
-      <li>🌟 Pengembangan Game & Roleplay Server</li>
-      <li>💼 Layanan Digital & Kreatif</li>
+      <li>🌟 Pengembangan Game &amp; Roleplay Server</li>
+      <li>💼 Layanan Digital &amp; Kreatif</li>
       <li>🛠️ Inovasi Teknologi Masa Depan</li>
     </ul>
 
     <h2>🤝 Bergabunglah Bersama Kami</h2>
     <p>Kami terbuka untuk kolaborasi, mitra kerja, dan talenta baru yang ingin tumbuh bersama membangun masa depan digital Indonesia.</p>
-
-    <div class="form-section">
-      <h2>📝 Pendaftaran Akun Pencoblosan</h2>
-      <p>Klik tombol di bawah untuk menuju Google Form.</p>
-      <a href="https://forms.gle/1iyHNtXXghsjmqc9A" target="_blank" class="form-button">Buka Formulir</a>
-    </div>
   </section>
 
   <div class="blog-container">
@@ -187,7 +179,7 @@
       <li><strong>Discord Communities</strong> – Platform favorit untuk komunitas gamer, developer, musisi, dan pembelajar.</li>
       <li><strong>Forum Roleplay</strong> – Seperti komunitas GTA V RP, Minecraft RP, hingga komunitas cerita interaktif.</li>
       <li><strong>Komunitas Open Source</strong> – Tempat para programmer bekerja sama membangun aplikasi dan sistem secara sukarela.</li>
-      <li><strong>Media Sosial & Konten</strong> – Komunitas kreator konten di TikTok, YouTube, dan Instagram juga berkembang pesat.</li>
+      <li><strong>Media Sosial &amp; Konten</strong> – Komunitas kreator konten di TikTok, YouTube, dan Instagram juga berkembang pesat.</li>
     </ul>
 
     <h2>Dunia Digital: Peluang dan Tantangan</h2>
@@ -199,25 +191,19 @@
     <p class="footer">Ditulis oleh CarlandsCompany – Mendukung pertumbuhan komunitas game dan digital Indonesia.</p>
   </div>
 
-  <div class="bg-gray-900 text-white font-sans flex items-center justify-center py-10">
-    <div class="space-y-4 text-center">
-      <h1 class="text-3xl font-bold mb-6">Temukan CarlandsCompany</h1>
-      <a href="https://www.youtube.com/@carlandsid" target="_blank" class="flex items-center justify-center space-x-3 px-6 py-3 rounded-2xl bg-red-600 hover:bg-red-700 transition transform hover:scale-105 shadow-lg">
-        <i data-lucide="youtube" class="w-6 h-6"></i><span>YouTube</span>
-      </a>
-      <a href="https://www.instagram.com/carlandscompanyid/" target="_blank" class="flex items-center justify-center space-x-3 px-6 py-3 rounded-2xl bg-pink-500 hover:bg-pink-600 transition transform hover:scale-105 shadow-lg">
-        <i data-lucide="instagram" class="w-6 h-6"></i><span>Instagram</span>
-      </a>
-      <a href="https://www.tiktok.com/@carlandscompanyid" target="_blank" class="flex items-center justify-center space-x-3 px-6 py-3 rounded-2xl bg-black hover:bg-gray-800 transition transform hover:scale-105 shadow-lg">
-        <i data-lucide="music" class="w-6 h-6"></i><span>TikTok</span>
-      </a>
-      <a href="https://discord.com/invite/tnzfy7tSVS" target="_blank" class="flex items-center justify-center space-x-3 px-6 py-3 rounded-2xl bg-indigo-600 hover:bg-indigo-700 transition transform hover:scale-105 shadow-lg">
-        <i data-lucide="message-circle" class="w-6 h-6"></i><span>Discord</span>
-      </a>
-      <a href="https://chat.whatsapp.com/EoyF4WTKUHB1feKjRdowss" target="_blank" class="flex items-center justify-center space-x-3 px-6 py-3 rounded-2xl bg-green-500 hover:bg-green-600 transition transform hover:scale-105 shadow-lg">
-        <i data-lucide="phone" class="w-6 h-6"></i><span>Komunitas WhatsApp</span>
-      </a>
-    </div>
+  <div class="social-buttons">
+    <h1 class="text-3xl font-bold mb-6">Temukan CarlandsCompany</h1>
+    <a href="https://www.youtube.com/@carlandsid" class="youtube" target="_blank"><i data-lucide="youtube"></i> YouTube</a>
+    <a href="https://www.instagram.com/carlandscompanyid/" class="instagram" target="_blank"><i data-lucide="instagram"></i> Instagram</a>
+    <a href="https://www.tiktok.com/@carlandscompanyid" class="tiktok" target="_blank"><i data-lucide="music"></i> TikTok</a>
+    <a href="https://discord.com/invite/tnzfy7tSVS" class="discord" target="_blank"><i data-lucide="message-circle"></i> Discord</a>
+    <a href="https://chat.whatsapp.com/EoyF4WTKUHB1feKjRdowss" class="whatsapp" target="_blank"><i data-lucide="phone"></i> Komunitas WhatsApp</a>
+  </div>
+
+  <div class="form-section">
+    <h2>📝 Pendaftaran Akun Pencoblosan</h2>
+    <p>Klik tombol di bawah untuk menuju Google Form.</p>
+    <a href="https://forms.gle/1iyHNtXXghsjmqc9A" class="form-button" target="_blank">Buka Formulir</a>
   </div>
 
   <div class="warning">
