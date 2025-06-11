@@ -89,6 +89,7 @@ Website Resmi CarlandsCompanYID
 </body>
 </html>
 
+Informasi Carlands
 
 <html lang="id">
 <head>
@@ -184,7 +185,6 @@ Website Resmi CarlandsCompanYID
   <a href="https://www.youtube.com/@carlandsid" target="_blank">YouTube</a>
 </body>
 </html>
-
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
@@ -216,8 +216,6 @@ Website Resmi CarlandsCompanYID
   <a href="https://www.instagram.com/carlandscompanyid/" target="_blank">Instagram</a>
 </body>
 </html>
-
-<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
