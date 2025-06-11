@@ -63,7 +63,7 @@
 </head>
 <body>
   <header class="py-8">
-    <h1 class="text-3xl font-bold">CarlandsCompanyID</h1>
+    <h1 class="text-3xl font-bold">CarlandsCompanyID Website Resmi</h1>
   </header>
 
   <section class="fade-in text-center">
