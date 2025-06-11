@@ -89,7 +89,70 @@ Website Resmi CarlandsCompanYID
 </body>
 </html>
 
-Informasi Carlands
+
+
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Informasi CarlandsCompanyID</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .content {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      max-width: 800px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #e0e0e0;
+    }
+
+    .highlight {
+      color: #00c6ff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>SEMUA INFORMASI <span class="highlight">CARLANDSCOMPANYID</span></h1>
+    <p>
+      Selamat datang di pusat informasi <span class="highlight">CarlandsCompanyID</span>.  
+      Di sini, Anda akan menemukan segala hal tentang layanan, visi perusahaan, proyek game kami, serta informasi kontak resmi.  
+      Kami berkomitmen untuk menghadirkan inovasi di dunia digital, khususnya dalam dunia game dan komunitas.
+    </p>
+    <p>
+      Untuk pertanyaan lebih lanjut atau kerja sama, silakan hubungi kami melalui platform resmi kami.
+    </p>
+  </div>
+</body>
+</html>
+
 
 <html lang="id">
 <head>
