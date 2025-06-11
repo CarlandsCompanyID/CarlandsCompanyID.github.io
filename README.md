@@ -89,8 +89,6 @@ Website Resmi CarlandsCompanYID
 </body>
 </html>
 
-
-
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
@@ -100,56 +98,36 @@ Website Resmi CarlandsCompanYID
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
       height: 100vh;
-      text-align: center;
-    }
-
-    .content {
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-      max-width: 800px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
     }
 
     h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
-      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      font-size: 48px;
+      text-align: center;
+      color: transparent;
+      background-image: linear-gradient(90deg, #00e0ff, #0072ff, #00e0ff);
+      background-clip: text;
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      animation: glow 3s ease-in-out infinite alternate;
     }
 
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-      color: #e0e0e0;
-    }
-
-    .highlight {
-      color: #00c6ff;
-      font-weight: bold;
+    @keyframes glow {
+      0% {
+        text-shadow: 0 0 5px #00e0ff, 0 0 10px #0072ff, 0 0 15px #00e0ff;
+      }
+      100% {
+        text-shadow: 0 0 10px #00e0ff, 0 0 20px #0072ff, 0 0 30px #00e0ff;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="content">
-    <h1>SEMUA INFORMASI <span class="highlight">CARLANDSCOMPANYID</span></h1>
-    <p>
-      Selamat datang di pusat informasi <span class="highlight">CarlandsCompanyID</span>.  
-      Di sini, Anda akan menemukan segala hal tentang layanan, visi perusahaan, proyek game kami, serta informasi kontak resmi.  
-      Kami berkomitmen untuk menghadirkan inovasi di dunia digital, khususnya dalam dunia game dan komunitas.
-    </p>
-    <p>
-      Untuk pertanyaan lebih lanjut atau kerja sama, silakan hubungi kami melalui platform resmi kami.
-    </p>
-  </div>
+  <h1>SEMUA INFORMASI<br>CARLANDSCOMPANYID</h1>
 </body>
 </html>
 
