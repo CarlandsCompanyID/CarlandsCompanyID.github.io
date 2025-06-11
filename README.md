@@ -1,7 +1,7 @@
 # CarlandsCompanyID.github.io
 Website Resmi CarlandsCompanYID
 
-<!DOCTYPE html>
+
 <html lang="id">
 <head>
   <meta charset="UTF-8">
