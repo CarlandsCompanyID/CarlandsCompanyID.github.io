@@ -353,6 +353,3 @@
   <footer>
     &copy; 2025 CarlandsCompanyID. Semua Hak Dilindungi.
   </footer>
-
-</body>
-</html>
