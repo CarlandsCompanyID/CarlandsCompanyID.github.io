@@ -199,12 +199,6 @@
     <p class="footer">Ditulis oleh CarlandsCompany – Mendukung pertumbuhan komunitas game dan digital Indonesia.</p>
   </div>
 
-  <div class="social-buttons">
-    <a href="https://www.youtube.com/@carlandsid" target="_blank" class="youtube">YouTube</a>
-    <a href="https://www.instagram.com/carlandscompanyid/" target="_blank" class="instagram">Instagram</a>
-    <a href="https://www.tiktok.com/@carlandscompanyid" target="_blank" class="tiktok">TikTok</a>
-  </div>
-
   <div class="bg-gray-900 text-white font-sans flex items-center justify-center py-10">
     <div class="space-y-4 text-center">
       <h1 class="text-3xl font-bold mb-6">Temukan CarlandsCompany</h1>
