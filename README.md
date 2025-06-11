@@ -71,13 +71,6 @@ Website Resmi CarlandsCompanYID
   <header>
     <h1>Selamat Datang di Website Resmi CarlandsCompanyID</h1>
   </header>
-
-  <section>
-    <div class="warning">
-      <strong>⚠️ Peringatan:</strong><br>
-      Ini adalah <strong>situs resmi</strong> milik CarlandsCompanyID. Situs selain <code>carlandscompanyid</code> adalah <strong>tidak resmi atau palsu</strong>.
-    </div>
-
     <h2>📌 Tentang Kami</h2>
     <p><strong>CarlandsCompanyID</strong> didirikan pada tahun <strong>2020</strong> oleh seorang pelajar asal <strong>Jawa Tengah</strong>. Kami adalah perusahaan digital yang fokus pada inovasi, pengembangan game, dan layanan berbasis teknologi.</p>
 
@@ -297,6 +290,11 @@ Website Resmi CarlandsCompanYID
 </head>
 <body>
   <h1>Kunjungi TikTok Kami!</h1>
-  <a href="https://www.tiktok.com/@Carlandscompany Official" target="_blank">TikTok</a>
+  <a href="https://www.tiktok.com/@carlandscompanyid" target="_blank">TikTok</a>
 </body>
 </html>
+<section>
+    <div class="warning">
+      <strong>⚠️ Peringatan:</strong><br>
+      Ini adalah <strong>situs resmi</strong> milik CarlandsCompanyID. Situs selain <code>carlandscompanyid</code> adalah <strong>tidak resmi atau palsu</strong>.
+    </div>
