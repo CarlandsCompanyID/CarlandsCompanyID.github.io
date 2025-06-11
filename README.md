@@ -153,57 +153,95 @@ Website Resmi CarlandsCompanYID
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Media Sosial</title>
+  <title>YouTube</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
       background-color: #f3f3f3;
+      text-align: center;
       padding-top: 50px;
     }
-    h1 {
-      color: #333;
-    }
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 30px;
-    }
-    .social-links a {
+    a {
       text-decoration: none;
+      background-color: #FF0000;
+      color: white;
       padding: 15px 25px;
       border-radius: 8px;
-      color: white;
       font-weight: bold;
       transition: background-color 0.3s ease;
     }
-    .youtube {
-      background-color: #FF0000;
-    }
-    .youtube:hover {
+    a:hover {
       background-color: #cc0000;
     }
-    .instagram {
-      background-color: #C13584;
+  </style>
+</head>
+<body>
+  <h1>Kunjungi YouTube Kami!</h1>
+  <a href="https://www.youtube.com/namamu" target="_blank">YouTube</a>
+</body>
+</html>
+
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instagram</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      text-align: center;
+      padding-top: 50px;
     }
-    .instagram:hover {
+    a {
+      text-decoration: none;
+      background-color: #C13584;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    a:hover {
       background-color: #9c2a6a;
     }
-    .tiktok {
-      background-color: #010101;
+  </style>
+</head>
+<body>
+  <h1>Kunjungi Instagram Kami!</h1>
+  <a href="https://www.instagram.com/namamu" target="_blank">Instagram</a>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TikTok</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      text-align: center;
+      padding-top: 50px;
     }
-    .tiktok:hover {
+    a {
+      text-decoration: none;
+      background-color: #010101;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    a:hover {
       background-color: #333;
     }
   </style>
 </head>
 <body>
-  <h1>Ikuti Kami di Media Sosial!</h1>
-  <div class="social-links">
-    <a href="https://www.youtube.com/namamu" class="youtube" target="_blank">YouTube</a>
-    <a href="https://www.instagram.com/namamu" class="instagram" target="_blank">Instagram</a>
-    <a href="https://www.tiktok.com/@namamu" class="tiktok" target="_blank">TikTok</a>
-  </div>
+  <h1>Kunjungi TikTok Kami!</h1>
+  <a href="https://www.tiktok.com/@namamu" target="_blank">TikTok</a>
 </body>
 </html>
