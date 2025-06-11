@@ -105,7 +105,7 @@
     }
     .form-button {
       display: inline-block;
-      padding: 24px 24px;
+      padding: 14px 24px;
       background-color: #4285F4;
       color: white;
       text-decoration: none;
@@ -171,7 +171,7 @@
     <p class="text-gray-600 mb-6">Selamat datang di situs resmi kami. Semoga hari Anda menyenangkan dan penuh produktivitas.</p>
     
     <!-- Divider -->
-    <hr class="border-gray-300 my-4">
+    <hr class="border-gray-700 my-4">
 
     <!-- CarlandsCompanyID -->
     <div class="text-sm text-gray-500">
