@@ -210,6 +210,12 @@
     <p>Klik tombol di bawah untuk menuju Google Form.</p>
     <a href="https://forms.gle/1iyHNtXXghsjmqc9A" class="form-button" target="_blank">Buka Formulir</a>
   </div>
+  
+  <div class="warning">
+    <strong>⚠️ Peringatan:</strong><br>
+    Ini adalah <strong>situs resmi</strong> milik CarlandsCompanyID. Situs selain <code>carlandscompanyid</code> adalah <strong>tidak resmi atau palsu</strong>.
+  </div>
+
 <html lang="id">
 <head>
   <meta charset="UTF-8">
@@ -296,11 +302,6 @@
 
 </body>
 </html>
-
-  <div class="warning">
-    <strong>⚠️ Peringatan:</strong><br>
-    Ini adalah <strong>situs resmi</strong> milik CarlandsCompanyID. Situs selain <code>carlandscompanyid</code> adalah <strong>tidak resmi atau palsu</strong>.
-  </div>
 
   <footer>
     &copy; 2025 CarlandsCompanyID. Semua Hak Dilindungi.
