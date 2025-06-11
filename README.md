@@ -146,11 +146,58 @@
       color: #666;
     }
   </style>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Sapaan Formal - CarlandsCompanyID</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in {
+      animation: fadeIn 2s ease-in-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
-<body>
-  <header>
-    <h1>Selamat Datang di Website Resmi CarlandsCompanyID</h1>
-  </header>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen">
+  <div class="text-center p-8 rounded-2xl shadow-xl bg-white max-w-md fade-in">
+    <div class="text-5xl mb-4">👋</div>
+    <h1 id="sapaan" class="text-2xl font-semibold text-gray-800 mb-2"></h1>
+    <p class="text-gray-600 mb-6">Selamat datang di situs resmi kami. Semoga hari Anda menyenangkan dan penuh produktivitas.</p>
+    
+    <!-- Divider -->
+    <hr class="border-gray-300 my-4">
+
+    <!-- CarlandsCompanyID -->
+    <div class="text-sm text-gray-500">
+      Dibawakan oleh <span class="font-semibold text-gray-700">CarlandsCompanyID</span><br>
+      Inovasi • Teknologi • Kreativitas
+    </div>
+  </div>
+
+  <script>
+    function dapatkanSapaanFormal() {
+      const jam = new Date().getHours();
+      if (jam >= 4 && jam < 11) {
+        return "Selamat pagi!";
+      } else if (jam >= 11 && jam < 15) {
+        return "Selamat siang!";
+      } else if (jam >= 15 && jam < 18) {
+        return "Selamat sore!";
+      } else {
+        return "Selamat malam!";
+      }
+    }
+
+    document.getElementById('sapaan').textContent = dapatkanSapaanFormal();
+  </script>
+</body>
+</html>
 
   <section>
     <h2>📌 Tentang Kami</h2>
