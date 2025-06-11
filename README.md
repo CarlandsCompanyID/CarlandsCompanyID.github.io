@@ -182,3 +182,46 @@
   const updateTime = new Date();
   document.getElementById("update-time").textContent = updateTime.toLocaleString("id-ID");
 </script>
+
+<!-- Tombol WhatsApp Mengambang -->
+<a href="https://wa.me/625179901942" 
+   class="wa-float" 
+   target="_blank" 
+   aria-label="Chat via WhatsApp">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+</a>
+
+.wa-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  background-color: #25d366;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.wa-float:hover {
+  transform: scale(1.1);
+}
+
+.wa-float::after {
+  content: 'Chat Kami!';
+  position: absolute;
+  right: 60px;
+  background: #25d366;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: 0.3s;
+}
+
+.wa-float:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
