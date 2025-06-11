@@ -217,6 +217,7 @@ Website Resmi CarlandsCompanYID
 </body>
 </html>
 
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
@@ -245,6 +246,6 @@ Website Resmi CarlandsCompanYID
 </head>
 <body>
   <h1>Kunjungi TikTok Kami!</h1>
-  <a href=https://www.tiktok.com/@carlandscompanyid" target="_blank">TikTok</a>
+  <a href="https://www.tiktok.com/@Carlandscompany Official" target="_blank">TikTok</a>
 </body>
 </html>
