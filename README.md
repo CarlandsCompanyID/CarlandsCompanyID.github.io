@@ -176,3 +176,9 @@
   </script>
 </body>
 </html>
+<p id="last-updated">Terakhir diperbarui: <span id="update-time"></span></p>
+
+<script>
+  const updateTime = new Date();
+  document.getElementById("update-time").textContent = updateTime.toLocaleString("id-ID");
+</script>
