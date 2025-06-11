@@ -47,7 +47,7 @@
       content: "\2022";
       color: #003366;
       font-weight: bold;
-      display: inline-block; 
+      display: inline-block;
       width: 1em;
       margin-left: -1em;
     }
@@ -165,9 +165,11 @@
   <div class="blog-container">
     <h1>Komunitas Roblox, Komunitas Digital Lainnya, dan Dunia Digital</h1>
     <p>Di tengah pesatnya perkembangan teknologi, dunia digital telah menjadi ruang utama bagi interaksi sosial, kreativitas, dan pembelajaran. Berbagai komunitas digital bermunculan, dari platform game seperti <strong>Roblox</strong>, hingga forum diskusi, komunitas roleplay, dan jaringan sosial yang tersebar luas.</p>
+
     <h2>Komunitas Roblox: Kreativitas Tanpa Batas</h2>
     <p><strong>Roblox</strong> adalah salah satu contoh sukses dari komunitas digital berbasis game. Tidak hanya menjadi tempat bermain, Roblox memberikan alat bagi penggunanya untuk menciptakan dunia virtual mereka sendiri. Melalui <em>Roblox Studio</em>, para kreator muda dapat belajar coding, desain, dan pengembangan game.</p>
     <p>Banyak komunitas terbentuk di dalamnya, seperti <strong>CarlandsRP</strong>, yang menyediakan dunia roleplay realistis bagi para pemain. Komunitas ini menunjukkan bagaimana kerjasama, manajemen, dan kreativitas dapat tumbuh dari sebuah dunia digital.</p>
+
     <h2>Komunitas Digital Selain Roblox</h2>
     <p>Selain Roblox, dunia digital juga dipenuhi dengan komunitas lain yang tak kalah menarik. Misalnya:</p>
     <ul>
@@ -176,8 +178,10 @@
       <li><strong>Komunitas Open Source</strong> – Tempat para programmer bekerja sama membangun aplikasi dan sistem secara sukarela.</li>
       <li><strong>Media Sosial & Konten</strong> – Komunitas kreator konten di TikTok, YouTube, dan Instagram juga berkembang pesat.</li>
     </ul>
+
     <h2>Dunia Digital: Peluang dan Tantangan</h2>
     <p>Dunia digital menawarkan banyak peluang—belajar teknologi, menemukan teman baru, hingga membangun karier. Namun, juga hadir tantangan seperti keamanan data, cyberbullying, dan informasi palsu. Karena itu, penting bagi setiap anggota komunitas digital untuk bertanggung jawab dan menjaga etika online.</p>
+
     <h2>Kesimpulan</h2>
     <p>Komunitas digital seperti Roblox dan lainnya bukan sekadar tempat hiburan. Mereka adalah ekosistem sosial yang membentuk generasi baru dengan cara berpikir kreatif, kolaboratif, dan digital-native. Masa depan komunitas ini akan terus berkembang seiring teknologi dan koneksi global.</p>
     <p class="footer">Ditulis oleh CarlandsCompany – Mendukung pertumbuhan komunitas game dan digital Indonesia.</p>
@@ -191,5 +195,61 @@
   <footer>
     &copy; 2025 CarlandsCompanyID. Semua Hak Dilindungi.
   </footer>
+
+  <!-- Link Section in English -->
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarlandsCompany Links</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        lucide.createIcons();
+      });
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-gray-900 text-white font-sans flex items-center justify-center min-h-screen">
+    <div class="space-y-4 text-center">
+      <h1 class="text-3xl font-bold mb-6">Temukan CarlandsCompany</h1>
+
+      <!-- YouTube -->
+      <a href="https://www.youtube.com/@carlandsid" target="_blank"
+        class="flex items-center justify-center space-x-3 px-6 py-3 rounded-2xl bg-red-600 hover:bg-red-700 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="youtube" class="w-6 h-6"></i>
+        <span>YouTube</span>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/carlandscompanyid/" target="_blank"
+        class="flex items-center justify-center space-x-3 px-6 py-3 rounded-2xl bg-pink-500 hover:bg-pink-600 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="instagram" class="w-6 h-6"></i>
+        <span>Instagram</span>
+      </a>
+
+      <!-- TikTok -->
+      <a href="https://www.tiktok.com/@carlandscompanyid" target="_blank"
+        class="flex items-center justify-center space-x-3 px-6 py-3 rounded-2xl bg-black hover:bg-gray-800 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="music" class="w-6 h-6"></i>
+        <span>TikTok</span>
+      </a>
+
+      <!-- Discord -->
+      <a href="https://discord.com/invite/tnzfy7tSVS" target="_blank"
+        class="flex items-center justify-center space-x-3 px-6 py-3 rounded-2xl bg-indigo-600 hover:bg-indigo-700 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="message-circle" class="w-6 h-6"></i>
+        <span>Discord</span>
+      </a>
+
+      <!-- WhatsApp -->
+      <a href="https://chat.whatsapp.com/EoyF4WTKUHB1feKjRdowss" target="_blank"
+        class="flex items-center justify-center space-x-3 px-6 py-3 rounded-2xl bg-green-500 hover:bg-green-600 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="phone" class="w-6 h-6"></i>
+        <span>Komunitas WhatsApp</span>
+      </a>
+    </div>
+  </body>
+  </html>
 </body>
 </html>
