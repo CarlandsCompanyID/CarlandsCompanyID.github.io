@@ -1,5 +1,6 @@
 # CarlandsCompanyID.github.io
 Website Resmi CarlandsCompanYID
+
 <html lang="id">
 <head>
   <meta charset="UTF-8">
@@ -32,6 +33,7 @@ Website Resmi CarlandsCompanYID
     }
     ul {
       padding-left: 1.5rem;
+    
     }
     footer {
       text-align: center;
@@ -39,6 +41,7 @@ Website Resmi CarlandsCompanYID
       background-color: #003366;
       color: white;
       margin-top: 3rem;
+    
     }
   </style>
 </head>
