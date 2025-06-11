@@ -210,6 +210,92 @@
     <p>Klik tombol di bawah untuk menuju Google Form.</p>
     <a href="https://forms.gle/1iyHNtXXghsjmqc9A" class="form-button" target="_blank">Buka Formulir</a>
   </div>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Informasi - CarlandsCompany</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 8px;
+      margin-top: 40px;
+    }
+
+    p, a {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-info {
+      line-height: 2;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Informasi Website</h1>
+
+    <section id="tentang-kami">
+      <h2>Tentang Kami</h2>
+      <p>
+        CarlandsCompany adalah perusahaan berbasis digital yang berfokus pada pengembangan komunitas dan layanan hiburan interaktif, termasuk server game dan platform sosial. Kami berkomitmen untuk memberikan pengalaman yang aman, menyenangkan, dan berkualitas bagi semua pengguna kami.
+      </p>
+    </section>
+
+    <section id="kontak">
+      <h2>Kontak</h2>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:Carlandscompanyid@gmail.com">Carlandscompanyid@gmail.com</a></p>
+        <p>Telegram: <a href="https://t.me/+3nP2bPuSM1g5Yjk1" target="_blank">https://t.me/+3nP2bPuSM1g5Yjk1</a></p>
+        <p>Telp: <a href="tel:085179901942">0851-7990-1942</a></p>
+      </div>
+    </section>
+
+    <section id="kebijakan-privasi">
+      <h2>Kebijakan Privasi</h2>
+      <p>
+        Privasi Anda adalah prioritas kami. Informasi yang Anda berikan akan kami simpan dengan aman dan hanya digunakan untuk keperluan layanan yang kami sediakan. Kami tidak akan membagikan data Anda kepada pihak ketiga tanpa izin dari Anda.
+      </p>
+    </section>
+
+    <section id="hak-cipta">
+      <h2>Hak Cipta</h2>
+      <p>
+        &copy; 2025 Carlandscompanyid. Seluruh konten yang tersedia di situs ini dilindungi oleh undang-undang hak cipta. Dilarang menyalin atau mendistribusikan konten tanpa izin tertulis dari pemilik.
+      </p>
+    </section>
+  </div>
+
+</body>
+</html>
 
   <div class="warning">
     <strong>⚠️ Peringatan:</strong><br>
