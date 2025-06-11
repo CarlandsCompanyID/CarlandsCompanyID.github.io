@@ -94,6 +94,10 @@
     .instagram:hover { background-color: #9c2a6a; }
     .tiktok { background-color: #010101; }
     .tiktok:hover { background-color: #333; }
+    .Discord { background-color: #5865F2; }
+    .Discord:hover { background-color: #4752c4; }
+    .whatsapp { background-color: #25D366; }
+    .whatsapp:hover { background-color: #1ebe57; }
     .form-section {
       text-align: center;
       margin-top: 2rem;
