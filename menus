@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Navbar Clone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d1117;
+    }
+
+    nav {
+      background-color: #0d1117;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      position: relative;
+      padding: 8px 5px;
+    }
+
+    nav a:hover {
+      color: #58a6ff;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 35px;
+      left: 0;
+      background-color: #161b22;
+      min-width: 180px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px 15px;
+      color: white;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #21262d;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .logo {
+      width: 24px;
+      height: 24px;
+    }
+
+    .nav-item::after {
+      content: "▾";
+      margin-left: 4px;
+      font-size: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" class="logo" alt="Logo">
+
+    <div class="dropdown">
+      <a href="#" class="nav-item">Product</a>
+      <div class="dropdown-content">
+        <a href="#">Features</a>
+        <a href="#">Security</a>
+        <a href="#">Team</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#" class="nav-item">Solutions</a>
+      <div class="dropdown-content">
+        <a href="#">Enterprise</a>
+        <a href="#">Startups</a>
+        <a href="#">Education</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#" class="nav-item">Resources</a>
+      <div class="dropdown-content">
+        <a href="#">Docs</a>
+        <a href="#">Community</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#" class="nav-item">Open Source</a>
+      <div class="dropdown-content">
+        <a href="#">Explore</a>
+        <a href="#">Topics</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#" class="nav-item">Enterprise</a>
+      <div class="dropdown-content">
+        <a href="#">Overview</a>
+        <a href="#">Customer Stories</a>
+      </div>
+    </div>
+
+    <a href="#">Pricing</a>
+  </nav>
+
+</body>
+</html>
