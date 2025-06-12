@@ -207,8 +207,7 @@
     }
     document.getElementById('sapaan').textContent = dapatkanSapaanFormal();
   </script>
-</body>
-</html>
+
 <p id="last-updated">Terakhir diperbarui: <span id="update-time"></span></p>
 
 <script>
