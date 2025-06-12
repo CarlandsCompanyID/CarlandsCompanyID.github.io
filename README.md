@@ -2,138 +2,154 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CarlandsCompanyID - Website Resmi</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <title>Website Dalam Pemeliharaan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      line-height: 1.6;
+      padding: 0;
     }
-    header, footer {
-      background-color: #003366;
-      color: #fff;
-      text-align: center;
-    }
-    section, .warning {
-      max-width: 900px;
-      margin: 2rem auto;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    .social-buttons a {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.75rem 1rem;
-      border-radius: 8px;
-      font-weight: bold;
-      color: #fff;
-    }
-    .youtube { background: #FF0000; }
-    .instagram { background: #C13584; }
-    .tiktok { background: #010101; }
-    .discord { background: radial-gradient(circle at top left, #5865F2, #404EED); }
-    .whatsapp { background: #25D366; }
-    .social-buttons a:hover {
-      opacity: 0.8;
-    }
-    .form-button {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background-color: #4285F4;
-      color: white;
-      border-radius: 6px;
-      transition: background-color .3s;
-    }
-    .form-button:hover {
-      background-color: #3367D6;
-    }
-    .fade-in {
-      animation: fadeIn 1.5s ease-in-out forwards;
-      opacity: 0;
-    }
-    @keyframes fadeIn {
-      to { opacity: 1; }
-    }
-    .marquee-container {
-      width: 100%;
-      overflow: hidden;
-      background: #121212;
-      padding: 20px 0;
-      border-top: 1px solid #333;
-      border-bottom: 1px solid #333;
-    }
-    .marquee-text {
-      display: inline-block;
-      white-space: nowrap;
-      font-size: 18px;
-      font-weight: 400;
-      background: linear-gradient(90deg, #00f7ff, #865dff, #ff5ea5, #00f7ff);
-      background-size: 400% auto;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: scroll 60s linear infinite, gradientShift 12s ease-in-out infinite;
-      text-shadow: 0 0 4px rgba(255,255,255,0.05);
-      padding-left: 100%;
-    }
-    @keyframes scroll {
-      from { transform: translateX(0); }
-      to { transform: translateX(-100%); }
-    }
-    @keyframes gradientShift {
-      0%   { background-position: 0% 50%; }
-      50%  { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-    .marquee-container:hover .marquee-text,
-    .paused {
-      animation-play-state: paused !important;
-    }
-    .clock {
-      background: #ffffff;
-      padding: 20px;
-      margin: 10px auto;
-      width: 90%;
-      max-width: 300px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 10px;
-      font-size: 1.2em;
-    }
-    @media (max-width: 600px) {
-      .text-5xl { font-size: 2.5rem; }
-      .text-2xl { font-size: 1.25rem; }
-    }
-    .status {
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f2f4f8, #dbe4f0);
       display: flex;
-      align-items: center;
-      font-size: 16px;
-      font-family: Arial, sans-serif;
       justify-content: center;
-      margin: 20px auto;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
     }
-    .dot {
-      height: 12px;
-      width: 12px;
-      border-radius: 50%;
-      margin-right: 8px;
+
+    .container {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 520px;
+      width: 100%;
+      animation: fadeIn 1.2s ease;
     }
-    .online { background-color: #4CAF50; }
-    .offline { background-color: #f44336; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .emoji {
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 26px;
+      color: #e74c3c;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    #countdown {
+      font-size: 28px;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-top: 25px;
+    }
+
+    .social {
+      font-size: 14px;
+      color: #666;
+      margin-top: 25px;
+    }
+
+    .icons {
+      margin-top: 10px;
+    }
+
+    .icons a {
+      margin: 0 8px;
+      color: #666;
+      text-decoration: none;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .icons a:hover {
+      color: #3498db;
+    }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      .emoji {
+        font-size: 70px;
+      }
+
+      #countdown {
+        font-size: 32px;
+      }
+    }
   </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const targetTime = new Date().getTime() + 5 * 60 * 60 * 1000;
+      const countdownElement = document.getElementById("countdown");
+
+      const updateCountdown = () => {
+        const now = new Date().getTime();
+        const distance = targetTime - now;
+
+        if (distance < 0) {
+          countdownElement.textContent = "00:00:00";
+          clearInterval(interval);
+          return;
+        }
+
+        const hours = Math.floor(distance / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdownElement.textContent =
+          hours.toString().padStart(2, '0') + ':' +
+          minutes.toString().padStart(2, '0') + ':' +
+          seconds.toString().padStart(2, '0');
+      };
+
+      const interval = setInterval(updateCountdown, 1000);
+      updateCountdown();
+    });
+  </script>
 </head>
 <body>
-
-  <section class="fade-in text-center">
-    <div class="text-5xl mb-4">👋👋</div>
-    <h2 id="sapaan" class="text-2xl font-semibold mb-2"></h2>
-    <p class="text-gray-700 mb-4">Selamat datang di situs resmi kami. Semoga hari Anda menyenangkan dan penuh produktivitas.</p>
-    <p class="text-sm text-gray-500">Dibawakan oleh <strong>CarlandsCompanyID</strong><br>Inovasi • Teknologi • Kreativitas</p>
+  <div class="container">
+    <div class="emoji">🔧</div>
+    <h1>Website Dalam Pemeliharaan</h1>
+    <p>Mohon maaf atas ketidaknyamanan ini. Kami sedang melakukan <strong>pemeliharaan sistem</strong> untuk meningkatkan kualitas layanan.</p>
+    <p>⏳ Harap bersabar, website akan kembali dapat diakses dalam waktu:</p>
+    <div id="countdown">00:00:00</div>
+    <div class="social">
+      📢 Dapatkan pembaruan melalui media sosial kami:
+      <div class="icons">
+        <a href="https://instagram.com/namabrand" target="_blank">📷</a>
+        <a href="https://twitter.com/namabrand" target="_blank">🐦</a>
+        <a href="https://facebook.com/namabrand" target="_blank">📘</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html> Teknologi • Kreativitas</p>
   </section>
 
   <div class="marquee-container" id="marquee">
