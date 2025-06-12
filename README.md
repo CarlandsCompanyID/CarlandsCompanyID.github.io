@@ -102,35 +102,6 @@
       }
     }
   </style>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const targetTime = new Date().getTime() + 5 * 60 * 60 * 1000;
-      const countdownElement = document.getElementById("countdown");
-
-      const updateCountdown = () => {
-        const now = new Date().getTime();
-        const distance = targetTime - now;
-
-        if (distance < 0) {
-          countdownElement.textContent = "00:00:00";
-          clearInterval(interval);
-          return;
-        }
-
-        const hours = Math.floor(distance / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        countdownElement.textContent =
-          hours.toString().padStart(2, '0') + ':' +
-          minutes.toString().padStart(2, '0') + ':' +
-          seconds.toString().padStart(2, '0');
-      };
-
-      const interval = setInterval(updateCountdown, 1000);
-      updateCountdown();
-    });
-  </script>
 </head>
 <body>
   <div class="container">
@@ -148,5 +119,43 @@
       </div>
     </div>
   </div>
+
+  <script>
+    const countdownElement = document.getElementById("countdown");
+
+    // Ambil targetTime dari localStorage atau buat baru
+    let targetTime = localStorage.getItem("targetTime");
+
+    if (!targetTime) {
+      const newTarget = new Date().getTime() + 5 * 60 * 60 * 1000; // 5 jam dari sekarang
+      localStorage.setItem("targetTime", newTarget);
+      targetTime = newTarget;
+    } else {
+      targetTime = parseInt(targetTime);
+    }
+
+    const updateCountdown = () => {
+      const now = new Date().getTime();
+      const distance = targetTime - now;
+
+      if (distance <= 0) {
+        countdownElement.textContent = "00:00:00";
+        clearInterval(interval);
+        return;
+      }
+
+      const hours = Math.floor(distance / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdownElement.textContent =
+        hours.toString().padStart(2, '0') + ':' +
+        minutes.toString().padStart(2, '0') + ':' +
+        seconds.toString().padStart(2, '0');
+    };
+
+    const interval = setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
 </body>
 </html>
