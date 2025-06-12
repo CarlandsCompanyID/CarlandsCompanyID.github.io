@@ -99,6 +99,45 @@
 </body>
 </html>>
 
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teks Berjalan</title>
+  <style>
+    .marquee-container {
+      width: 100%;
+      overflow: hidden;
+      background-color: #222;
+      color: #fff;
+      padding: 10px 0;
+    }
+
+    .marquee-text {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee 10s linear infinite;
+      font-size: 20px;
+      padding-left: 100%;
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="marquee-container">
+  <div class="marquee-text">
+    Status : Online
+  </div>
+</div>
+
+</body>
+</html>
+
   <section class="fade-in text-center">
     <div class="text-5xl mb-4">👋👋</div>
     <h2 id="sapaan" class="text-2xl font-semibold mb-2"></h2>
