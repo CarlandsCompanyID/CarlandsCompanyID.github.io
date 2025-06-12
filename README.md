@@ -92,7 +92,15 @@
 
 <div class="marquee-container">
   <div class="marquee-text">
-    Selamat datang di website kami! Ikuti terus informasi terbaru dari CarlandsCompanyID!
+    Selamat Datang di CarlandsCompanyID!
+Hai, Sobat Carlanders! 👋
+Terima kasih sudah bergabung bersama kami di CarlandsCompanyID – rumahnya kreativitas, komunitas, dan karya tanpa batas. Kami sangat senang menyambut kehadiranmu di sini!
+
+Di tempat ini, kamu bukan hanya menjadi bagian dari sebuah komunitas, tapi juga keluarga.
+Mari kita tumbuh, berkarya, dan mewujudkan mimpi bersama. 🚀
+
+Jika kamu punya pertanyaan, ide, atau sekadar ingin menyapa, tim kami selalu siap menyambutmu dengan tangan terbuka.
+Sekali lagi, selamat datang – perjalanan seru kita baru saja dimulai!
   </div>
 </div>
 
