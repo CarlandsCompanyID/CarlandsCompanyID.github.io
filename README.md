@@ -109,6 +109,22 @@
       .text-5xl { font-size: 2.5rem; }
       .text-2xl { font-size: 1.25rem; }
     }
+    .status {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      justify-content: center;
+      margin: 20px auto;
+    }
+    .dot {
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+    .online { background-color: #4CAF50; }
+    .offline { background-color: #f44336; }
   </style>
 </head>
 <body>
@@ -122,13 +138,13 @@
 
   <div class="marquee-container" id="marquee">
     <div class="marquee-text">
-      Selamat Datang di CarlandsCompanyID! Hai, Sobat Carlanders! 👋 Terima kasih sudah bergabung bersama kami di CarlandsCompanyID – rumahnya kreativitas, komunitas, dan karya tanpa batas. Kami sangat senang menyambut kehadiranmu di sini! Di tempat ini, kamu bukan hanya menjadi bagian dari sebuah komunitas, tapi juga keluarga. Mari kita tumbuh, berkarya, dan mewujudkan mimpi bersama. 🚀 Jika kamu punya pertanyaan, ide, atau sekadar ingin menyapa, tim kami selalu siap menyambutmu dengan tangan terbuka. Sekali lagi, selamat datang – perjalanan seru kita baru saja dimulai!, Selamat Datang di CarlandsCompanyID! Hai, Sobat Carlanders! 👋 Terima kasih sudah bergabung bersama kami di CarlandsCompanyID – rumahnya kreativitas, komunitas, dan karya tanpa batas. Kami sangat senang menyambut kehadiranmu di sini! Di tempat ini, kamu bukan hanya menjadi bagian dari sebuah komunitas, tapi juga keluarga. Mari kita tumbuh, berkarya, dan mewujudkan mimpi bersama. 🚀 Jika kamu punya pertanyaan, ide, atau sekadar ingin menyapa, tim kami selalu siap menyambutmu dengan tangan terbuka. Sekali lagi, selamat datang – perjalanan seru kita baru saja dimulai!, Selamat Datang di CarlandsCompanyID! Hai, Sobat Carlanders! 👋 Terima kasih sudah bergabung bersama kami di CarlandsCompanyID – rumahnya kreativitas, komunitas, dan karya tanpa batas. Kami sangat senang menyambut kehadiranmu di sini! Di tempat ini, kamu bukan hanya menjadi bagian dari sebuah komunitas, tapi juga keluarga. Mari kita tumbuh, berkarya, dan mewujudkan mimpi bersama. 🚀 Jika kamu punya pertanyaan, ide, atau sekadar ingin menyapa, tim kami selalu siap menyambutmu dengan tangan terbuka. Sekali lagi, selamat datang – perjalanan seru kita baru saja dimulai!, Selamat Datang di CarlandsCompanyID! Hai, Sobat Carlanders! 👋 Terima kasih sudah bergabung bersama kami di CarlandsCompanyID – rumahnya kreativitas, komunitas, dan karya tanpa batas. Kami sangat senang menyambut kehadiranmu di sini! Di tempat ini, kamu bukan hanya menjadi bagian dari sebuah komunitas, tapi juga keluarga. Mari kita tumbuh, berkarya, dan mewujudkan mimpi bersama. 🚀 Jika kamu punya pertanyaan, ide, atau sekadar ingin menyapa, tim kami selalu siap menyambutmu dengan tangan terbuka. Sekali lagi, selamat datang – perjalanan seru kita baru saja dimulai!,Selamat Datang di CarlandsCompanyID! Hai, Sobat Carlanders! 👋 Terima kasih sudah bergabung bersama kami di CarlandsCompanyID – rumahnya kreativitas, komunitas, dan karya tanpa batas. Kami sangat senang menyambut kehadiranmu di sini! Di tempat ini, kamu bukan hanya menjadi bagian dari sebuah komunitas, tapi juga keluarga. Mari kita tumbuh, berkarya, dan mewujudkan mimpi bersama. 🚀 Jika kamu punya pertanyaan, ide, atau sekadar ingin menyapa, tim kami selalu siap menyambutmu dengan tangan terbuka. Sekali lagi, selamat datang – perjalanan seru kita baru saja dimulai!,
+      Selamat Datang di CarlandsCompanyID! Hai, Sobat Carlanders! 👋 Terima kasih sudah bergabung bersama kami...
     </div>
   </div>
 
   <section>
     <h2>🎯 Misi Kami</h2>
-    <p>Membangun ekosistem digital yang kreatif dan inovatif, serta memberikan solusi teknologi berkualitas tinggi untuk semua kalangan.</p>
+    <p>Membangun ekosistem digital yang kreatif dan inovatif...</p>
     <h2>🚀 Apa yang Kami Tawarkan</h2>
     <ul class="ml-4 list-disc">
       <li>🌟 Pengembangan Game & Roleplay Server</li>
@@ -136,11 +152,11 @@
       <li>🛠️ Inovasi Teknologi Masa Depan</li>
     </ul>
     <h2>🤝 Bergabunglah Bersama Kami</h2>
-    <p>Kami terbuka untuk kolaborasi, mitra kerja, dan talenta baru yang ingin tumbuh bersama membangun masa depan digital Indonesia.</p>
+    <p>Kami terbuka untuk kolaborasi, mitra kerja...</p>
   </section>
 
   <div class="form-section text-center my-4">
-    <h2 class="mb-2">📝 Pendaftaran Akun Pencoblosan [OPEN] </h2>
+    <h2 class="mb-2">📝 Pendaftaran Akun Pencoblosan [OPEN]</h2>
     <a href="https://forms.gle/1iyHNtXXghsjmqc9A" class="form-button" target="_blank">Buka Formulir</a>
   </div>
 
@@ -159,6 +175,19 @@
     <div class="clock" id="wita">WITA (Makassar): </div>
     <div class="clock" id="wit">WIT (Jayapura): </div>
   </section>
+
+  <section id="contact" class="text-center">
+    <h2 class="text-xl font-semibold mb-2">Kontak Kami</h2>
+    <p>Hai, butuh bantuan atau ingin bekerja sama dengan <strong>CarlandsCompanyID</strong>? Kami menunggu kabar darimu!</p>
+    <p><strong>Email Utama:</strong></p>
+    <a href="mailto:carlandscompanyid@gmail.com" class="text-blue-600 underline">carlandscompanyid@gmail.com</a>
+    <p class="mt-4">Jangan ragu untuk mengirimkan pertanyaan, saran, atau sekadar menyapa. Kami akan membalas secepat mungkin!</p>
+  </section>
+
+  <div class="status">
+    <div class="dot online"></div>
+    <span>Sedang Online</span>
+  </div>
 
   <div class="warning mx-4 my-6 text-center text-sm">
     <strong>⚠️ Peringatan:</strong> Ini adalah <strong>situs resmi</strong> milik CarlandsCompanyID. Situs selain <code>carlandscompanyid</code> adalah <strong>tidak resmi atau palsu</strong>.
