@@ -1,13 +1,16 @@
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CarlandsCompanyID - Website Resmi</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
       background-color: #f4f4f4;
       color: #333;
       line-height: 1.6;
@@ -59,30 +62,6 @@
     @keyframes fadeIn {
       to { opacity: 1; }
     }
-  </style>
-  <section class="fade-in text-center">
-    <div class="text-5xl mb-4">👋👋</div>
-    <h2 id="sapaan" class="text-2xl font-semibold mb-2"></h2>
-    <p class="text-gray-700 mb-4">Selamat datang di situs resmi kami. Semoga hari Anda menyenangkan dan penuh produktivitas.</p>
-    <p class="text-sm text-gray-500">Dibawakan oleh <strong>CarlandsCompanyID</strong><br>Inovasi • Teknologi • Kreativitas</p>
-  </section>
-
-  <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Selamat Datang - CarlandsCompanyID</title>
-
-  <!-- Google Font: Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      margin: 0;
-      background-color: #0d0d0d;
-      font-family: 'Poppins', sans-serif;
-    }
-
     .marquee-container {
       width: 100%;
       overflow: hidden;
@@ -91,7 +70,6 @@
       border-top: 1px solid #333;
       border-bottom: 1px solid #333;
     }
-
     .marquee-text {
       display: inline-block;
       white-space: nowrap;
@@ -105,46 +83,49 @@
       text-shadow: 0 0 4px rgba(255,255,255,0.05);
       padding-left: 100%;
     }
-
     @keyframes scroll {
       from { transform: translateX(0); }
       to { transform: translateX(-100%); }
     }
-
     @keyframes gradientShift {
       0%   { background-position: 0% 50%; }
       50%  { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
-
-    /* Pause saat hover */
-    .marquee-container:hover .marquee-text {
-      animation-play-state: paused;
-    }
-
-    /* Pause saat tap */
+    .marquee-container:hover .marquee-text,
     .paused {
       animation-play-state: paused !important;
+    }
+    .clock {
+      background: #ffffff;
+      padding: 20px;
+      margin: 10px auto;
+      width: 90%;
+      max-width: 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      font-size: 1.2em;
+    }
+    @media (max-width: 600px) {
+      .text-5xl { font-size: 2.5rem; }
+      .text-2xl { font-size: 1.25rem; }
     }
   </style>
 </head>
 <body>
 
-<div class="marquee-container" id="marquee">
-  <div class="marquee-text">
-    Selamat Datang di CarlandsCompanyID! Hai, Sobat Carlanders! 👋 Terima kasih sudah bergabung bersama kami di CarlandsCompanyID – rumahnya kreativitas, komunitas, dan karya tanpa batas. Kami sangat senang menyambut kehadiranmu di sini! Di tempat ini, kamu bukan hanya menjadi bagian dari sebuah komunitas, tapi juga keluarga. Mari kita tumbuh, berkarya, dan mewujudkan mimpi bersama. 🚀 Jika kamu punya pertanyaan, ide, atau sekadar ingin menyapa, tim kami selalu siap menyambutmu dengan tangan terbuka. Sekali lagi, selamat datang – perjalanan seru kita baru saja dimulai!, STATUS WEBSITE : Online
+  <section class="fade-in text-center">
+    <div class="text-5xl mb-4">👋👋</div>
+    <h2 id="sapaan" class="text-2xl font-semibold mb-2"></h2>
+    <p class="text-gray-700 mb-4">Selamat datang di situs resmi kami. Semoga hari Anda menyenangkan dan penuh produktivitas.</p>
+    <p class="text-sm text-gray-500">Dibawakan oleh <strong>CarlandsCompanyID</strong><br>Inovasi • Teknologi • Kreativitas</p>
+  </section>
+
+  <div class="marquee-container" id="marquee">
+    <div class="marquee-text">
+      Selamat Datang di CarlandsCompanyID! Hai, Sobat Carlanders! 👋 Terima kasih sudah bergabung bersama kami di CarlandsCompanyID – rumahnya kreativitas, komunitas, dan karya tanpa batas. Kami sangat senang menyambut kehadiranmu di sini! Di tempat ini, kamu bukan hanya menjadi bagian dari sebuah komunitas, tapi juga keluarga. Mari kita tumbuh, berkarya, dan mewujudkan mimpi bersama. 🚀 Jika kamu punya pertanyaan, ide, atau sekadar ingin menyapa, tim kami selalu siap menyambutmu dengan tangan terbuka. Sekali lagi, selamat datang – perjalanan seru kita baru saja dimulai!, STATUS WEBSITE : Online
+    </div>
   </div>
-</div>
-
-<script>
-  const marquee = document.getElementById('marquee');
-  marquee.addEventListener('touchstart', () => {
-    marquee.querySelector('.marquee-text').classList.toggle('paused');
-  });
-</script>
-
-</body>
-</html>
 
   <section>
     <h2>🎯 Misi Kami</h2>
@@ -159,7 +140,7 @@
     <p>Kami terbuka untuk kolaborasi, mitra kerja, dan talenta baru yang ingin tumbuh bersama membangun masa depan digital Indonesia.</p>
   </section>
 
-  <div class="form-section text-center">
+  <div class="form-section text-center my-4">
     <h2 class="mb-2">📝 Pendaftaran Akun Pencoblosan [OPEN] </h2>
     <a href="https://forms.gle/1iyHNtXXghsjmqc9A" class="form-button" target="_blank">Buka Formulir</a>
   </div>
@@ -172,39 +153,39 @@
     <a href="https://discord.com/invite/tnzfy7tSVS" class="discord"><i data-lucide="message-circle"></i> Discord</a>
     <a href="https://chat.whatsapp.com/EoyF4WTKUHB1feKjRdowss" class="whatsapp"><i data-lucide="phone"></i> WhatsApp</a>
   </div>
-  <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <title>Jam Seluruh Indonesia</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f0f0f0;
-      padding: 40px;
-    }
-    h1 {
-      margin-bottom: 40px;
-    }
-    .clock {
-      background: #ffffff;
-      padding: 20px;
-      margin: 10px auto;
-      width: 300px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 10px;
-      font-size: 1.8em;
-    }
-  </style>
-</head>
-<body>
-  <h1>Jam Digital Seluruh Indonesia</h1>
 
-  <div class="clock" id="wib">WIB (Jakarta): </div>
-  <div class="clock" id="wita">WITA (Makassar): </div>
-  <div class="clock" id="wit">WIT (Jayapura): </div>
+  <section class="text-center">
+    <h2 class="text-xl font-semibold my-4">Jam Digital Seluruh Indonesia</h2>
+    <div class="clock" id="wib">WIB (Jakarta): </div>
+    <div class="clock" id="wita">WITA (Makassar): </div>
+    <div class="clock" id="wit">WIT (Jayapura): </div>
+  </section>
+
+  <div class="warning mx-4 my-6 text-center text-sm">
+    <strong>⚠️ Peringatan:</strong> Ini adalah <strong>situs resmi</strong> milik CarlandsCompanyID. Situs selain <code>carlandscompanyid</code> adalah <strong>tidak resmi atau palsu</strong>.
+  </div>
+
+  <footer class="py-6 text-sm">
+    &copy; 2025 CarlandsCompanyID. Semua Hak Dilindungi.
+    <p id="last-updated" class="mt-2">Terakhir diperbarui: <span id="update-time"></span></p>
+  </footer>
 
   <script>
+    lucide.createIcons();
+
+    function dapatkanSapaanFormal() {
+      const jam = new Date().getHours();
+      return jam < 11 ? "Selamat pagi!" :
+             jam < 15 ? "Selamat siang!" :
+             jam < 18 ? "Selamat sore!" : "Selamat malam!";
+    }
+    document.getElementById('sapaan').textContent = dapatkanSapaanFormal();
+
+    const marquee = document.getElementById('marquee');
+    marquee.addEventListener('touchstart', () => {
+      marquee.querySelector('.marquee-text').classList.toggle('paused');
+    });
+
     function updateIndonesianClocks() {
       const now = new Date();
       const options = {
@@ -214,43 +195,22 @@
         hour12: false
       };
 
-      document.getElementById("wib").textContent = 
+      document.getElementById("wib").textContent =
         "WIB (Jakarta): " + now.toLocaleTimeString("id-ID", { ...options, timeZone: "Asia/Jakarta" });
 
-      document.getElementById("wita").textContent = 
+      document.getElementById("wita").textContent =
         "WITA (Makassar): " + now.toLocaleTimeString("id-ID", { ...options, timeZone: "Asia/Makassar" });
 
-      document.getElementById("wit").textContent = 
+      document.getElementById("wit").textContent =
         "WIT (Jayapura): " + now.toLocaleTimeString("id-ID", { ...options, timeZone: "Asia/Jayapura" });
     }
 
     setInterval(updateIndonesianClocks, 1000);
     updateIndonesianClocks();
+
+    const updateTime = new Date();
+    document.getElementById("update-time").textContent = updateTime.toLocaleString("id-ID");
   </script>
+
 </body>
 </html>
-  <div class="warning mx-4">
-    <strong>⚠️ Peringatan:</strong> Ini adalah <strong>situs resmi</strong> milik CarlandsCompanyID. Situs selain <code>carlandscompanyid</code> adalah <strong>tidak resmi atau palsu</strong>.
-  </div>
-
-  <footer class="py-6">
-    &copy; 2025 CarlandsCompanyID. Semua Hak Dilindungi.
-  </footer>
-
-  <script>
-    lucide.createIcons();
-    function dapatkanSapaanFormal() {
-      const jam = new Date().getHours();
-      return jam < 11 ? "Selamat pagi!" :
-             jam < 15 ? "Selamat siang!" :
-             jam < 18 ? "Selamat sore!" : "Selamat malam!";
-    }
-    document.getElementById('sapaan').textContent = dapatkanSapaanFormal();
-  </script>
-
-<p id="last-updated">Terakhir diperbarui: <span id="update-time"></span></p>
-
-<script>
-  const updateTime = new Date();
-  document.getElementById("update-time").textContent = updateTime.toLocaleString("id-ID");
-</script>
