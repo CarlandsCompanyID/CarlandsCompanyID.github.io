@@ -156,21 +156,21 @@
       <li>🛠️ Inovasi Teknologi Masa Depan</li>
     </ul>
     <h2>🤝 Bergabunglah Bersama Kami</h2>
-    <p>🎮 Gabung Bersama CarlandsCompanyID! 🚀
-          Apakah kamu punya semangat untuk menciptakan dunia game yang seru, inovatif, dan penuh tantangan?
-          Di CarlandsCompanyID, kami bukan hanya membuat game — kami membangun pengalaman, komunitas, dan masa depan industri game Indonesia!
-         ✨ Mengapa bergabung dengan kami?
-         Lingkungan kreatif dan kolaboratif
-         Proyek game yang seru dan penuh potensi
-         Kesempatan berkembang bersama tim profesional
-         Dukungan penuh untuk ide dan inovasi kamu
-  💡 Baik kamu developer, desainer, storyteller, content creator, atau gamers yang ingin berkarya — ini saatnya kamu ambil peran!
-  📩 Yuk, kirim portofolio atau kenalan dulu dengan tim kami!
-  📍 Temukan info lengkap di [website/link komunitas]
-  📱 Atau DM kami langsung di [Instagram/Discord/WhatsApp]
-  Bersama CarlandsCompanyID, wujudkan game impianmu!
-  #CarlandsCompanyID #GameDeveloperIndonesia #JoinUs #Carlandsantipungli</p>
-  </section>
+    <p>🎮 Gabung Bersama CarlandsCompanyID! 🚀<p>
+    <p>Apakah kamu punya semangat untuk menciptakan dunia game yang seru, inovatif, dan penuh tantangan?<p>
+    <p>Di CarlandsCompanyID, kami bukan hanya membuat game — kami membangun pengalaman, komunitas, dan masa depan industri game Indonesia!<p>
+    <p>✨ Mengapa bergabung dengan kami?<p>
+    <p>Lingkungan kreatif dan kolaboratif<p>
+    <p>Proyek game yang seru dan penuh potensi<p>
+    <p>Kesempatan berkembang bersama tim profesional<p>
+    <p>Dukungan penuh untuk ide dan inovasi kamu<p>
+    <p>💡Baik kamu developer, desainer, storyteller, content creator, atau gamers yang ingin berkarya — ini saatnya kamu ambil peran!<p>
+    <p>📩 Yuk, kirim portofolio atau kenalan dulu dengan tim kami!<p>
+    <p>📍 Temukan info lengkap di [website/link komunitas]<p>
+    <p>📱 Atau DM kami langsung di [Instagram/Discord/WhatsApp]<p>
+    <p> Bersama CarlandsCompanyID, wujudkan game impianmu!<p>
+    <p>#CarlandsCompanyID #GameDeveloperIndonesia #JoinUs #Carlandsantipungli</p>
+   </section>
 
   <div class="form-section text-center my-4">
     <h2 class="mb-2">📝 Pendaftaran Akun Pencoblosan [OPEN]</h2>
