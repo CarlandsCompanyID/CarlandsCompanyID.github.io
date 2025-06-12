@@ -113,9 +113,8 @@
     <div class="social">
       📢 Dapatkan pembaruan melalui media sosial kami:
       <div class="icons">
-        <a href="https://instagram.com/namabrand" target="_blank">📷</a>
-        <a href="https://twitter.com/namabrand" target="_blank">🐦</a>
-        <a href="https://facebook.com/namabrand" target="_blank">📘</a>
+        <a href="https://instagram.com/carlanscompanyid" target="_blank">📷</a>
+        <a href="https://tiktok.com/carlanscompanyid" target="_blank">🐦</a>
       </div>
     </div>
   </div>
