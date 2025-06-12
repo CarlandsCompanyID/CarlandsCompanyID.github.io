@@ -87,7 +87,7 @@
   </section>
 
   <div class="form-section text-center">
-    <h2 class="mb-2">📝 Pendaftaran Akun Pencoblosan</h2>
+    <h2 class="mb-2">📝 Pendaftaran Akun Pencoblosan [OPEN] </h2>
     <a href="https://forms.gle/1iyHNtXXghsjmqc9A" class="form-button" target="_blank">Buka Formulir</a>
   </div>
 
