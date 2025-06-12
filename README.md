@@ -62,86 +62,79 @@
   </style>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teks Berjalan</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selamat Datang - CarlandsCompanyID</title>
+
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
+    body {
+      margin: 0;
+      background-color: #0d0d0d;
+      font-family: 'Poppins', sans-serif;
+    }
+
     .marquee-container {
       width: 100%;
       overflow: hidden;
-      background-color: #222;
-      color: #fff;
-      padding: 10px 0;
+      background: #121212;
+      padding: 20px 0;
+      border-top: 1px solid #333;
+      border-bottom: 1px solid #333;
     }
 
     .marquee-text {
       display: inline-block;
       white-space: nowrap;
-      animation: marquee 1m linear infinite;
-      font-size: 20px;
+      font-size: 18px;
+      font-weight: 400;
+      background: linear-gradient(90deg, #00f7ff, #865dff, #ff5ea5, #00f7ff);
+      background-size: 400% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: scroll 60s linear infinite, gradientShift 12s ease-in-out infinite;
+      text-shadow: 0 0 4px rgba(255,255,255,0.05);
       padding-left: 100%;
     }
 
-    @keyframes marquee {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
+    @keyframes scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-100%); }
+    }
+
+    @keyframes gradientShift {
+      0%   { background-position: 0% 50%; }
+      50%  { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Pause saat hover */
+    .marquee-container:hover .marquee-text {
+      animation-play-state: paused;
+    }
+
+    /* Pause saat tap */
+    .paused {
+      animation-play-state: paused !important;
     }
   </style>
 </head>
 <body>
 
-<div class="marquee-container">
+<div class="marquee-container" id="marquee">
   <div class="marquee-text">
-    Selamat Datang di CarlandsCompanyID!
-Hai, Sobat Carlanders! 👋
-Terima kasih sudah bergabung bersama kami di CarlandsCompanyID – rumahnya kreativitas, komunitas, dan karya tanpa batas. Kami sangat senang menyambut kehadiranmu di sini!
-
-Di tempat ini, kamu bukan hanya menjadi bagian dari sebuah komunitas, tapi juga keluarga.
-Mari kita tumbuh, berkarya, dan mewujudkan mimpi bersama. 🚀
-
-Jika kamu punya pertanyaan, ide, atau sekadar ingin menyapa, tim kami selalu siap menyambutmu dengan tangan terbuka.
-Sekali lagi, selamat datang – perjalanan seru kita baru saja dimulai!
+    Selamat Datang di CarlandsCompanyID! Hai, Sobat Carlanders! 👋 Terima kasih sudah bergabung bersama kami di CarlandsCompanyID – rumahnya kreativitas, komunitas, dan karya tanpa batas. Kami sangat senang menyambut kehadiranmu di sini! Di tempat ini, kamu bukan hanya menjadi bagian dari sebuah komunitas, tapi juga keluarga. Mari kita tumbuh, berkarya, dan mewujudkan mimpi bersama. 🚀 Jika kamu punya pertanyaan, ide, atau sekadar ingin menyapa, tim kami selalu siap menyambutmu dengan tangan terbuka. Sekali lagi, selamat datang – perjalanan seru kita baru saja dimulai!, STATUS WEBSITE : Online
   </div>
 </div>
 
-</body>
-</html>>
-
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teks Berjalan</title>
-  <style>
-    .marquee-container {
-      width: 100%;
-      overflow: hidden;
-      background-color: #222;
-      color: #fff;
-      padding: 10px 0;
-    }
-
-    .marquee-text {
-      display: inline-block;
-      white-space: nowrap;
-      animation: marquee 10s linear infinite;
-      font-size: 20px;
-      padding-left: 100%;
-    }
-
-    @keyframes marquee {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
-    }
-  </style>
-</head>
-<body>
-
-<div class="marquee-container">
-  <div class="marquee-text">
-    Status : Online
-  </div>
-</div>
+<script>
+  const marquee = document.getElementById('marquee');
+  marquee.addEventListener('touchstart', () => {
+    marquee.querySelector('.marquee-text').classList.toggle('paused');
+  });
+</script>
 
 </body>
 </html>
