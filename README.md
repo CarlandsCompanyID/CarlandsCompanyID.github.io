@@ -144,7 +144,11 @@
 
   <section>
     <h2>🎯 Misi Kami</h2>
-    <p>Membangun ekosistem digital yang kreatif dan inovatif...</p>
+    <p>Mengembangkan game berkualitas tinggi dengan cerita, gameplay, dan fitur yang orisinal serta menarik bagi berbagai kalangan.
+       Mendukung kreativitas dan talenta lokal dalam industri game melalui kolaborasi, pelatihan, dan pengembangan tim internal.
+       Membangun komunitas game yang inklusif dan sehat, di mana pemain merasa dihargai, aman, dan memiliki ruang untuk berekspresi.
+       Menggunakan teknologi terbaru untuk menciptakan pengalaman bermain yang responsif, realistis, dan inovatif.
+       Mewujudkan pertumbuhan berkelanjutan baik dari sisi produk maupun kontribusi terhadap industri kreatif di Indonesia.</p>
     <h2>🚀 Apa yang Kami Tawarkan</h2>
     <ul class="ml-4 list-disc">
       <li>🌟 Pengembangan Game & Roleplay Server</li>
@@ -152,7 +156,20 @@
       <li>🛠️ Inovasi Teknologi Masa Depan</li>
     </ul>
     <h2>🤝 Bergabunglah Bersama Kami</h2>
-    <p>Kami terbuka untuk kolaborasi, mitra kerja...</p>
+    <p>🎮 Gabung Bersama CarlandsCompanyID! 🚀
+          Apakah kamu punya semangat untuk menciptakan dunia game yang seru, inovatif, dan penuh tantangan?
+          Di CarlandsCompanyID, kami bukan hanya membuat game — kami membangun pengalaman, komunitas, dan masa depan industri game Indonesia!
+         ✨ Mengapa bergabung dengan kami?
+         Lingkungan kreatif dan kolaboratif
+         Proyek game yang seru dan penuh potensi
+         Kesempatan berkembang bersama tim profesional
+         Dukungan penuh untuk ide dan inovasi kamu
+  💡 Baik kamu developer, desainer, storyteller, content creator, atau gamers yang ingin berkarya — ini saatnya kamu ambil peran!
+  📩 Yuk, kirim portofolio atau kenalan dulu dengan tim kami!
+  📍 Temukan info lengkap di [website/link komunitas]
+  📱 Atau DM kami langsung di [Instagram/Discord/WhatsApp]
+  Bersama CarlandsCompanyID, wujudkan game impianmu!
+  #CarlandsCompanyID #GameDeveloperIndonesia #JoinUs #Carlandsantipungli</p>
   </section>
 
   <div class="form-section text-center my-4">
