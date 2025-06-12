@@ -77,7 +77,7 @@
     .marquee-text {
       display: inline-block;
       white-space: nowrap;
-      animation: marquee 10000s linear infinite;
+      animation: marquee 750s linear infinite;
       font-size: 20px;
       padding-left: 100%;
     }
