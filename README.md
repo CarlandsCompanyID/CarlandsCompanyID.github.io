@@ -2,57 +2,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Status Website</title>
+  <title>Website Sedang Down</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #f0f2f5;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    .card {
+      font-family: Arial, sans-serif;
+      background-color: #f2f4f8;
       text-align: center;
-      background-color: #fff;
-      padding: 40px 60px;
-      border-radius: 20px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      padding: 50px;
+      color: #333;
     }
-
-    .card h1 {
-      font-size: 2.8rem;
-      color: #c0392b;
-      margin-bottom: 20px;
-    }
-
-    .status {
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
       display: inline-block;
-      padding: 10px 20px;
-      border-radius: 50px;
-      font-weight: bold;
-      font-size: 1rem;
-      color: #fff;
+      max-width: 500px;
     }
-
-    .online {
-      background-color: #27ae60;
+    h1 {
+      color: #e74c3c;
+      font-size: 28px;
     }
-
-    .offline {
-      background-color: #e74c3c;
+    p {
+      font-size: 16px;
+      margin: 15px 0;
+    }
+    .emoji {
+      font-size: 40px;
+    }
+    .social {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>[ WEBSITE SEDANG DI PERBAIKI ]</h1>
-
-    <!-- Ganti class 'offline' menjadi 'online' jika status aktif -->
-    <div class="status offline">STATUS: OFFLINE</div>
+  <div class="container">
+    <div class="emoji">🔧</div>
+    <h1>WEBSITE SEDANG DOWN!</h1>
+    <p>Tim kami sedang melakukan <strong>pemeliharaan dan perbaikan sistem</strong> untuk meningkatkan kualitas layanan.</p>
+    <p>⏳ Harap bersabar, website akan kembali <strong>segera</strong>.</p>
+    <div class="social">
+      📢 Untuk info terbaru, silakan cek media sosial resmi kami.
+    </div>
   </div>
 </body>
 </html>
