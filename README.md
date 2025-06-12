@@ -60,7 +60,14 @@
       to { opacity: 1; }
     }
   </style>
-<html lang="id">
+  <section class="fade-in text-center">
+    <div class="text-5xl mb-4">👋👋</div>
+    <h2 id="sapaan" class="text-2xl font-semibold mb-2"></h2>
+    <p class="text-gray-700 mb-4">Selamat datang di situs resmi kami. Semoga hari Anda menyenangkan dan penuh produktivitas.</p>
+    <p class="text-sm text-gray-500">Dibawakan oleh <strong>CarlandsCompanyID</strong><br>Inovasi • Teknologi • Kreativitas</p>
+  </section>
+
+  <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -138,13 +145,6 @@
 
 </body>
 </html>
-
-  <section class="fade-in text-center">
-    <div class="text-5xl mb-4">👋👋</div>
-    <h2 id="sapaan" class="text-2xl font-semibold mb-2"></h2>
-    <p class="text-gray-700 mb-4">Selamat datang di situs resmi kami. Semoga hari Anda menyenangkan dan penuh produktivitas.</p>
-    <p class="text-sm text-gray-500">Dibawakan oleh <strong>CarlandsCompanyID</strong><br>Inovasi • Teknologi • Kreativitas</p>
-  </section>
 
   <section>
     <h2>🎯 Misi Kami</h2>
