@@ -170,8 +170,7 @@
     <p>📱 Atau DM kami langsung di [Instagram/Discord/WhatsApp]<p>
     <p> Bersama CarlandsCompanyID, wujudkan game impianmu!<p>
     <p>#CarlandsCompanyID #GameDeveloperIndonesia #JoinUs #Carlandsantipungli</p>
-   </section>
-
+   
   <div class="form-section text-center my-4">
     <h2 class="mb-2">📝 Pendaftaran Akun Pencoblosan [OPEN]</h2>
     <a href="https://forms.gle/1iyHNtXXghsjmqc9A" class="form-button" target="_blank">Buka Formulir</a>
@@ -257,5 +256,4 @@
     document.getElementById("update-time").textContent = updateTime.toLocaleString("id-ID");
   </script>
 
-</body>
-</html>
+
