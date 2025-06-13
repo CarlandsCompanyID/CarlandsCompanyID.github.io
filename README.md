@@ -40,28 +40,22 @@
       <div class="bg-blue-500 h-full animate-pulse w-3/4"></div>
     </div>
 
-    <!-- Form Email/Saran -->
-    <form onsubmit="submitForm(event)" class="mb-6 text-left">
-      <label class="block mb-1 text-gray-700 font-medium">Email (opsional):</label>
-      <input type="email" id="email" class="w-full mb-3 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="contoh@email.com" />
-
-      <label class="block mb-1 text-gray-700 font-medium">Saran atau pesan:</label>
-      <textarea id="pesan" rows="3" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Ketik saran atau pesan..."></textarea>
-
-      <button type="submit" class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
-        Kirim Pesan
-      </button>
-    </form>
-
-    <!-- Footer CTA -->
     <p class="text-sm text-gray-500">Kami akan mengirimkan notifikasi ke email Anda ketika website kembali online.</p>
   </div>
 
-  <!-- Script Countdown + Status -->
+  <!-- JavaScript Countdown + Simpan Target ke localStorage -->
   <script>
     const countdownEl = document.getElementById("countdown");
     const statusEl = document.getElementById("status");
-    const targetTime = new Date().getTime() + 10 * 60 * 60 * 1000; // 10 jam dari sekarang
+    const TIMER_KEY = "maintenance_target_time";
+
+    // Inisialisasi target waktu 10 jam ke depan jika belum ada di localStorage
+    if (!localStorage.getItem(TIMER_KEY)) {
+      const target = new Date().getTime() + 10 * 60 * 60 * 1000;
+      localStorage.setItem(TIMER_KEY, target);
+    }
+
+    const targetTime = parseInt(localStorage.getItem(TIMER_KEY), 10);
 
     function updateCountdown() {
       const now = new Date().getTime();
@@ -70,6 +64,7 @@
       if (distance <= 0) {
         countdownEl.innerText = "Website sudah kembali online!";
         statusEl.innerHTML = "Status: <span class='text-green-600 font-bold'>Online</span>";
+        localStorage.removeItem(TIMER_KEY);
         return;
       }
 
@@ -82,23 +77,6 @@
 
     setInterval(updateCountdown, 1000);
     updateCountdown();
-  </script>
-
-  <!-- Simulasi Kirim Form -->
-  <script>
-    function submitForm(e) {
-      e.preventDefault();
-      const email = document.getElementById('email').value;
-      const pesan = document.getElementById('pesan').value;
-
-      if (!pesan.trim()) {
-        alert("Tolong isi pesan Anda terlebih dahulu.");
-        return;
-      }
-
-      alert("Pesan Anda telah dikirim! Terima kasih 🙏\n\n(Notifikasi email akan dikirim saat website online kembali —)");
-      e.target.reset();
-    }
   </script>
 
 </body>
