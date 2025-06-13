@@ -96,7 +96,7 @@
         return;
       }
 
-      alert("Pesan Anda telah dikirim! Terima kasih 🙏\n\n(Notifikasi email akan dikirim saat website online kembali — simulasi)");
+      alert("Pesan Anda telah dikirim! Terima kasih 🙏\n\n(Notifikasi email akan dikirim saat website online kembali —)");
       e.target.reset();
     }
   </script>
