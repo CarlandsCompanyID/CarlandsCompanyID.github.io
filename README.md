@@ -40,7 +40,7 @@
       <div class="bg-blue-500 h-full animate-pulse w-3/4"></div>
     </div>
 
-    <p class="text-sm text-gray-500">Kami akan mengirimkan notifikasi ke email Anda ketika website kembali online.</p>
+    <p class="text-sm text-gray-500">Kami akan mengirimkan Progress Pengerjaan melalui informasi komunitas whatsapp Anda ketika website kembali online.</p>
   </div>
 
   <!-- JavaScript Countdown + Simpan Target ke localStorage -->
