@@ -1,3 +1,10 @@
+Tentu, saya sudah menghapus bagian "NeoLux", "Countdown Event", dan "Gabung Komunitas" dari kode Anda. Sisa konten, fitur responsif, dan kerapian posisi sudah dipertahankan.
+
+Berikut adalah kode HTML yang sudah dioptimalkan:
+
+HTML
+
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
@@ -27,7 +34,7 @@
       overflow-x: hidden; /* Mencegah scroll horizontal akibat animasi */
     }
 
-    /* Dark mode untuk bagian NeoLux dan sisanya */
+    /* Dark mode */
     body.dark-mode {
       background: linear-gradient(to right, #000000, #1f1f1f);
       color: #fff;
@@ -56,18 +63,12 @@
     }
     body.dark-mode .dot.online { background-color: #66BB6A; }
     body.dark-mode .dot.offline { background-color: #EF5350; }
-    body.dark-mode .glass {
-      backdrop-filter: blur(10px);
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
     body.dark-mode .text-gray-700, body.dark-mode .text-gray-500 {
       color: #ccc;
     }
     body.dark-mode a {
       color: #8ab4f8; /* Biru terang untuk tautan di dark mode */
     }
-
 
     header, footer {
       background-color: var(--primary-color);
@@ -204,81 +205,6 @@
     }
     .online { background-color: #4CAF50; }
     .offline { background-color: #f44336; }
-
-    /* Gaya Spesifik NeoLux */
-    .neolux-section {
-      background: linear-gradient(to right, #000000, #1f1f1f);
-      color: #fff;
-      padding: 4rem 1rem;
-      text-align: center;
-    }
-    .neolux-header {
-      font-size: 3.5rem; /* Setara dengan text-6xl */
-      font-weight: bold;
-      color: var(--accent-color);
-      animation: pulse 2s infinite ease-in-out;
-    }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.7; }
-    }
-    .neolux-subheader {
-      font-size: 1.25rem; /* Setara dengan text-xl */
-      color: #ccc;
-      margin-top: 0.5rem;
-    }
-    .neolux-card-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-      max-width: 1200px;
-      margin: 3rem auto;
-    }
-    @media (min-width: 768px) {
-      .neolux-card-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-    .glass {
-      backdrop-filter: blur(10px);
-      background: var(--glass-bg);
-      border: 1px solid var(--glass-border);
-      border-radius: 1rem; /* rounded-2xl */
-      padding: 1.5rem; /* p-6 */
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .glass:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    }
-    .glass h2 {
-      font-size: 1.25rem; /* text-xl */
-      font-weight: 600;
-      color: var(--accent-color);
-    }
-    .glass p {
-      margin-top: 0.5rem;
-      color: #eee;
-    }
-    .glass a {
-      color: #60a5fa; /* blue-400 */
-      text-decoration: underline;
-    }
-    .neolux-audio-button {
-      background: var(--glass-bg);
-      border: 1px solid var(--glass-border);
-      padding: 0.5rem 1rem;
-      border-radius: 9999px; /* rounded-full */
-      font-size: 0.875rem; /* text-sm */
-      font-weight: 600;
-      color: white;
-      transition: background-color 0.3s, color 0.3s, transform 0.2s;
-    }
-    .neolux-audio-button:hover {
-      background-color: white;
-      color: black;
-      transform: scale(1.05);
-    }
 
     /* Responsif Umum */
     @media (max-width: 768px) {
@@ -438,36 +364,6 @@
     <strong>⚠️ Peringatan:</strong> Ini adalah <strong>situs resmi</strong> milik CarlandsCompanyID. Situs selain <code>carlandscompanyid</code> adalah <strong>tidak resmi atau palsu</strong>.
   </div>
 
-  <div class="neolux-section" data-aos="fade-up" data-aos-duration="1500">
-    <header class="mb-12">
-      <h1 class="neolux-header">NeoLux</h1>
-      <p class="neolux-subheader">Elegance Beyond Code</p>
-    </header>
-
-    <section class="neolux-card-grid">
-      <div class="glass" data-aos="fade-down" data-aos-duration="1000">
-        <h2>Status Server</h2>
-        <p id="serverStatus" class="mt-2 text-green-400 font-semibold text-xl">ONLINE</p>
-      </div>
-      <div class="glass" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="200">
-        <h2>Countdown Event</h2>
-        <p id="countdown" class="mt-2 text-white font-semibold text-xl">Memuat...</p>
-      </div>
-      <div class="glass" data-aos="fade-down" data-aos-duration="1400" data-aos-delay="400">
-        <h2>Gabung Komunitas</h2>
-        <a href="https://chat.whatsapp.com/EoyF4WTKUHB1feKjRdowss" target="_blank" class="text-blue-400 underline mt-2 inline-block">Grup WhatsApp</a>
-      </div>
-    </section>
-
-    <section class="mb-10">
-      <audio id="bgMusic" loop autoplay>
-        <source src="https://www.bensound.com/bensound-music/bensound-slowmotion.mp3" type="audio/mp3">
-        Browser Anda tidak mendukung elemen audio.
-      </audio>
-      <button onclick="toggleAudio()" class="neolux-audio-button">🔊 Toggle Audio</button>
-    </section>
-  </div>
-
   <footer class="py-6 text-sm">
     © 2025 CarlandsCompanyID. Semua Hak Dilindungi.
     <p id="last-updated" class="mt-2">Terakhir diperbarui: <span id="update-time"></span></p>
@@ -527,35 +423,6 @@
     // Waktu terakhir diperbarui
     const updateTime = new Date();
     document.getElementById("update-time").textContent = updateTime.toLocaleString("id-ID");
-
-    // Countdown NeoLux (Diatur untuk 3 hari dari sekarang sebagai contoh)
-    const countdownEl = document.getElementById('countdown');
-    // Set targetDate menjadi 3 hari dari waktu sekarang
-    const targetDate = new Date().getTime() + (3 * 24 * 60 * 60 * 1000); // 3 hari dari sekarang
-
-    function updateCountdown() {
-      const now = new Date().getTime();
-      const diff = targetDate - now;
-
-      if (diff <= 0) {
-        countdownEl.innerText = "Event telah dimulai!";
-        return;
-      }
-
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-      countdownEl.innerText = `${days}h ${hours}j ${minutes}m ${seconds}d`;
-      requestAnimationFrame(updateCountdown);
-    }
-    updateCountdown();
-
-    // Toggle Audio NeoLux
-    function toggleAudio() {
-      const bgMusic = document.getElementById('bgMusic');
-      bgMusic.paused ? bgMusic.play() : bgMusic.pause();
-    }
 
     // Toggle Dark Mode
     const darkModeToggle = document.getElementById('darkModeToggle');
