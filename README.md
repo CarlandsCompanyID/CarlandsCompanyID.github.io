@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
@@ -25,10 +24,10 @@
       background-color: var(--background-color);
       color: var(--text-color);
       line-height: 1.6;
-      overflow-x: hidden; /* Prevent horizontal scroll due to animations */
+      overflow-x: hidden; /* Mencegah scroll horizontal akibat animasi */
     }
 
-    /* Dark mode for NeoLux section */
+    /* Dark mode untuk bagian NeoLux dan sisanya */
     body.dark-mode {
       background: linear-gradient(to right, #000000, #1f1f1f);
       color: #fff;
@@ -66,7 +65,7 @@
       color: #ccc;
     }
     body.dark-mode a {
-      color: #8ab4f8; /* A light blue for links in dark mode */
+      color: #8ab4f8; /* Biru terang untuk tautan di dark mode */
     }
 
 
@@ -120,41 +119,13 @@
       transform: translateY(-2px);
     }
 
-    /* Animations */
+    /* Animasi */
     .fade-in {
       animation: fadeIn 1.5s ease-in-out forwards;
       opacity: 0;
     }
     @keyframes fadeIn {
       to { opacity: 1; }
-    }
-
-    .slide-in-left {
-        animation: slideInLeft 1s ease-out forwards;
-        opacity: 0;
-    }
-    @keyframes slideInLeft {
-        from { transform: translateX(-100px); opacity: 0; }
-        to { transform: translateX(0); opacity: 1; }
-    }
-
-    .slide-in-right {
-        animation: slideInRight 1s ease-out forwards;
-        opacity: 0;
-    }
-    @keyframes slideInRight {
-        from { transform: translateX(100px); opacity: 0; }
-        to { transform: translateX(0); opacity: 1; }
-    }
-
-    .pop-in {
-        animation: popIn 0.6s ease-out forwards;
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    @keyframes popIn {
-        from { transform: scale(0.8); opacity: 0; }
-        to { transform: scale(1); opacity: 1; }
     }
 
     .marquee-container {
@@ -176,7 +147,7 @@
       -webkit-text-fill-color: transparent;
       animation: scroll 60s linear infinite, gradientShift 12s ease-in-out infinite;
       text-shadow: 0 0 4px rgba(255,255,255,0.05);
-      padding-left: 100%; /* Start off-screen */
+      padding-left: 100%; /* Mulai dari luar layar */
     }
     @keyframes scroll {
       from { transform: translateX(0); }
@@ -234,7 +205,7 @@
     .online { background-color: #4CAF50; }
     .offline { background-color: #f44336; }
 
-    /* NeoLux Specific Styles */
+    /* Gaya Spesifik NeoLux */
     .neolux-section {
       background: linear-gradient(to right, #000000, #1f1f1f);
       color: #fff;
@@ -242,7 +213,7 @@
       text-align: center;
     }
     .neolux-header {
-      font-size: 3.5rem; /* Equivalent to text-6xl */
+      font-size: 3.5rem; /* Setara dengan text-6xl */
       font-weight: bold;
       color: var(--accent-color);
       animation: pulse 2s infinite ease-in-out;
@@ -252,7 +223,7 @@
       50% { opacity: 0.7; }
     }
     .neolux-subheader {
-      font-size: 1.25rem; /* Equivalent to text-xl */
+      font-size: 1.25rem; /* Setara dengan text-xl */
       color: #ccc;
       margin-top: 0.5rem;
     }
@@ -309,7 +280,7 @@
       transform: scale(1.05);
     }
 
-    /* General Responsiveness */
+    /* Responsif Umum */
     @media (max-width: 768px) {
       .text-5xl { font-size: 2.5rem; }
       .text-2xl { font-size: 1.5rem; }
@@ -342,7 +313,7 @@
       }
     }
 
-    /* Dark Mode Toggle Button */
+    /* Tombol Dark Mode */
     .dark-mode-toggle {
         position: fixed;
         bottom: 20px;
@@ -480,18 +451,18 @@
       </div>
       <div class="glass" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="200">
         <h2>Countdown Event</h2>
-        <p id="countdown" class="mt-2 text-white font-semibold text-xl">Loading...</p>
+        <p id="countdown" class="mt-2 text-white font-semibold text-xl">Memuat...</p>
       </div>
       <div class="glass" data-aos="fade-down" data-aos-duration="1400" data-aos-delay="400">
         <h2>Gabung Komunitas</h2>
-        <a href="https://chat.whatsapp.com/EoyF4WTKUHB1feKjRdowss" target="_blank" class="text-blue-400 underline mt-2 inline-block">WhatsApp Group</a>
+        <a href="https://chat.whatsapp.com/EoyF4WTKUHB1feKjRdowss" target="_blank" class="text-blue-400 underline mt-2 inline-block">Grup WhatsApp</a>
       </div>
     </section>
 
     <section class="mb-10">
       <audio id="bgMusic" loop autoplay>
         <source src="https://www.bensound.com/bensound-music/bensound-slowmotion.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
+        Browser Anda tidak mendukung elemen audio.
       </audio>
       <button onclick="toggleAudio()" class="neolux-audio-button">🔊 Toggle Audio</button>
     </section>
@@ -507,10 +478,10 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
-      once: true, // whether animation should happen only once - while scrolling down
-      offset: 100, // offset (in px) from the original trigger point
-      duration: 800, // values from 0 to 3000, with step 50ms
-      easing: 'ease-in-out', // default easing for AOS animations
+      once: true, // Animasi hanya terjadi sekali saat discroll
+      offset: 100, // Offset dari titik pemicu asli
+      duration: 800, // Durasi animasi (ms)
+      easing: 'ease-in-out', // Jenis easing animasi AOS
     });
 
     lucide.createIcons();
@@ -530,7 +501,7 @@
       marquee.querySelector('.marquee-text').classList.toggle('paused');
     });
 
-    // Clock update
+    // Perbarui Jam Indonesia
     function updateIndonesianClocks() {
       const now = new Date();
       const options = {
@@ -553,14 +524,14 @@
     setInterval(updateIndonesianClocks, 1000);
     updateIndonesianClocks();
 
-    // Last updated time
+    // Waktu terakhir diperbarui
     const updateTime = new Date();
     document.getElementById("update-time").textContent = updateTime.toLocaleString("id-ID");
 
-    // NeoLux Countdown
+    // Countdown NeoLux (Diatur untuk 3 hari dari sekarang sebagai contoh)
     const countdownEl = document.getElementById('countdown');
-    // Set target date to 3 days from now for demonstration purposes
-    const targetDate = new Date().getTime() + (3 * 24 * 60 * 60 * 1000);
+    // Set targetDate menjadi 3 hari dari waktu sekarang
+    const targetDate = new Date().getTime() + (3 * 24 * 60 * 60 * 1000); // 3 hari dari sekarang
 
     function updateCountdown() {
       const now = new Date().getTime();
@@ -580,22 +551,22 @@
     }
     updateCountdown();
 
-    // NeoLux Toggle Audio
+    // Toggle Audio NeoLux
     function toggleAudio() {
       const bgMusic = document.getElementById('bgMusic');
       bgMusic.paused ? bgMusic.play() : bgMusic.pause();
     }
 
-    // Dark Mode Toggle
+    // Toggle Dark Mode
     const darkModeToggle = document.getElementById('darkModeToggle');
     darkModeToggle.addEventListener('click', () => {
       document.body.classList.toggle('dark-mode');
       const isDarkMode = document.body.classList.contains('dark-mode');
       localStorage.setItem('darkMode', isDarkMode);
-      darkModeToggle.textContent = isDarkMode ? '☀️' : '💡'; // Change icon
+      darkModeToggle.textContent = isDarkMode ? '☀️' : '💡'; // Ubah ikon
     });
 
-    // Check for dark mode preference on load
+    // Periksa preferensi dark mode saat halaman dimuat
     window.onload = () => {
       if (localStorage.getItem('darkMode') === 'true') {
         document.body.classList.add('dark-mode');
