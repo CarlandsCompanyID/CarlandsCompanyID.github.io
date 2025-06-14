@@ -1,10 +1,3 @@
-Tentu, saya sudah menghapus bagian "NeoLux", "Countdown Event", dan "Gabung Komunitas" dari kode Anda. Sisa konten, fitur responsif, dan kerapian posisi sudah dipertahankan.
-
-Berikut adalah kode HTML yang sudah dioptimalkan:
-
-HTML
-
-<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
