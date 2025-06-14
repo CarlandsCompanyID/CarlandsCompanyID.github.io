@@ -1,106 +1,189 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CarlandscompanyID - Pemeliharaan Website</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CarlandsCompanyID | NeoLux Interface</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
   <style>
-    :root {
-      color-scheme: light dark;
+    body {
+      background: linear-gradient(to right, #000000, #1f1f1f);
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      overflow-x: hidden;
     }
-    .countdown span {
-      min-width: 60px;
+    .glass {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 1rem;
+      padding: 1.5rem;
+    }
+    .marquee-text {
       display: inline-block;
+      white-space: nowrap;
+      animation: scroll 30s linear infinite;
+      color: #0ff;
     }
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    .dot { width: 12px; height: 12px; border-radius: 50%; margin-right: 8px; }
+    .online { background-color: #4CAF50; }
+    .offline { background-color: #f44336; }
   </style>
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 flex items-center justify-center min-h-screen p-6 transition-colors">
-  <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 max-w-xl text-center text-gray-900 dark:text-white">
-    <h1 class="text-3xl font-bold text-red-600 dark:text-red-400 mb-4">🔧 Website Sementara Dinonaktifkan</h1>
-    <p class="text-lg mb-4">
-      Website sementara kami nonaktifkan karena sedang dalam proses <span class="font-semibold text-blue-600 dark:text-blue-400">perombakan total</span>.
-      Harap bersabar dan tunggu hingga proses selesai.
-    </p>
-    <p class="mb-6 text-gray-600 dark:text-gray-300">
-      Semua progress pengerjaan akan dikirim melalui <span class="font-semibold text-green-600 dark:text-green-400">Pengumuman Komunitas CarlandscompanyID</span>.
-    </p>
+<body class="min-h-screen flex flex-col items-center text-center px-4">
 
-    <div class="countdown text-2xl font-mono space-x-2 mb-4">
-      <span id="days">00</span>:
-      <span id="hours">00</span>:
-      <span id="minutes">00</span>:
-      <span id="seconds">00</span>:
-      <span id="milliseconds">000</span>
-    </div>
+  <!-- Header -->
+  <header class="mt-10 mb-6">
+    <h1 class="text-5xl font-bold text-yellow-400 animate-pulse">CarlandsCompanyID</h1>
+    <p id="sapaan" class="text-lg text-gray-300 mt-2"></p>
+    <p class="text-sm text-gray-500">Inovasi • Teknologi • Kreativitas</p>
+  </header>
 
-    <div class="w-full bg-gray-300 dark:bg-gray-700 h-4 rounded-full overflow-hidden mb-6">
-      <div id="progressBar" class="h-full bg-green-500 dark:bg-green-400 transition-all duration-200" style="width: 0%;"></div>
-    </div>
-
-    <a href="https://chat.whatsapp.com/EoyF4WTKUHB1feKjRdowss" target="_blank"
-      class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded-full transition">
-      Bergabung ke Komunitas
-    </a>
+  <!-- Marquee -->
+  <div class="w-full overflow-hidden py-3 bg-black border-y border-gray-700">
+    <div class="marquee-text">👋 Selamat datang di CarlandsCompanyID! Bergabunglah bersama komunitas game masa depan! 🎮🚀</div>
   </div>
 
-  <!-- Audio Notifikasi -->
-  <audio id="dingSound" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" preload="auto"></audio>
+  <!-- Fitur Cards -->
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mt-10">
+    <div class="glass">
+      <h2 class="text-xl font-semibold text-yellow-300">Status Server</h2>
+      <div class="flex justify-center items-center mt-2">
+        <div class="dot online"></div><span class="text-green-400">ONLINE</span>
+      </div>
+    </div>
+    <div class="glass">
+      <h2 class="text-xl font-semibold text-yellow-300">Countdown Event</h2>
+      <p id="countdown" class="mt-2 text-white">Memuat...</p>
+    </div>
+    <div class="glass">
+      <h2 class="text-xl font-semibold text-yellow-300">Gabung Komunitas</h2>
+      <a href="https://chat.whatsapp.com/EoyF4WTKUHB1feKjRdowss" target="_blank" class="text-blue-400 underline">WhatsApp Group</a>
+    </div>
+  </section>
 
+  <!-- Visi Misi & Info -->
+  <section class="glass mt-10 max-w-4xl">
+    <h2 class="text-xl text-yellow-300 font-semibold mb-2">🎯 Misi Kami</h2>
+    <p class="text-sm text-gray-300">Mengembangkan game berkualitas tinggi, membangun komunitas sehat, dan mendorong kreativitas lokal melalui teknologi.</p>
+
+    <h2 class="text-xl text-yellow-300 font-semibold mt-6">🚀 Layanan Kami</h2>
+    <ul class="list-disc text-left list-inside text-sm text-gray-300">
+      <li>🌟 Pengembangan Game & Roleplay Server</li>
+      <li>💼 Layanan Digital & Kreatif</li>
+      <li>🛠️ Inovasi Teknologi Masa Depan</li>
+    </ul>
+
+    <h2 class="text-xl text-yellow-300 font-semibold mt-6">🤝 Ayo Bergabung!</h2>
+    <p class="text-sm text-gray-300">📩 Kirim portofolio atau kenalan lewat IG/Discord/WA. Bersama kita bangun dunia game Indonesia! 🎮</p>
+  </section>
+
+  <!-- Formulir -->
+  <div class="glass mt-10 max-w-md w-full text-center">
+    <h2 class="mb-2 text-yellow-300 font-semibold">📝 Pendaftaran Akun Pencoblosan [OPEN]</h2>
+    <a href="https://forms.gle/1iyHNtXXghsjmqc9A" class="text-white bg-blue-500 px-4 py-2 rounded hover:bg-blue-700 transition" target="_blank">Buka Formulir</a>
+  </div>
+
+  <!-- Jam Digital -->
+  <section class="glass mt-10 max-w-xl w-full text-sm text-gray-200">
+    <h2 class="text-lg font-semibold text-yellow-300 mb-2">🕒 Jam Digital Indonesia</h2>
+    <div id="wib">WIB: -</div>
+    <div id="wita">WITA: -</div>
+    <div id="wit">WIT: -</div>
+  </section>
+
+  <!-- Sosial Media -->
+  <div class="glass mt-10 max-w-2xl w-full">
+    <h2 class="text-lg text-yellow-300 font-semibold mb-4">🌐 Temukan Kami</h2>
+    <div class="flex flex-wrap justify-center gap-4 text-sm">
+      <a href="https://www.youtube.com/@carlandsid" class="text-red-400 hover:underline">YouTube</a>
+      <a href="https://www.instagram.com/carlandscompanyid/" class="text-pink-400 hover:underline">Instagram</a>
+      <a href="https://www.tiktok.com/@carlandscompanyid" class="text-white hover:underline">TikTok</a>
+      <a href="https://discord.com/invite/tnzfy7tSVS" class="text-indigo-400 hover:underline">Discord</a>
+      <a href="https://chat.whatsapp.com/EoyF4WTKUHB1feKjRdowss" class="text-green-400 hover:underline">WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Kontak -->
+  <section class="glass mt-10 max-w-md w-full text-sm">
+    <h2 class="text-yellow-300 font-semibold">📧 Kontak Kami</h2>
+    <p>Email: <a href="mailto:carlandscompanyid@gmail.com" class="underline text-blue-400">carlandscompanyid@gmail.com</a></p>
+  </section>
+
+  <!-- Audio Control -->
+  <section class="mt-10">
+    <audio id="bgMusic" loop autoplay>
+      <source src="https://www.bensound.com/bensound-music/bensound-slowmotion.mp3" type="audio/mp3">
+    </audio>
+    <button onclick="toggleAudio()" class="glass px-4 py-2 rounded-full text-sm font-semibold hover:bg-white hover:text-black transition">🔊 Toggle Audio</button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-gray-500 text-xs my-10">
+    &copy; 2025 CarlandsCompanyID • Terakhir diperbarui: <span id="update-time"></span>
+  </footer>
+
+  <!-- Script -->
   <script>
-    const countdownDuration = 1 * 24 * 60 * 60 * 1000 + // 1 hari
-                              20 * 60 * 60 * 1000 +     // 20 jam
-                              20 * 60 * 1000 +          // 20 menit
-                              20 * 1000 +               // 20 detik
-                              200;                      // 200 milidetik
+    lucide.createIcons();
 
-    const countdownKey = "carlandsCountdownEndTime";
-    let endTime = localStorage.getItem(countdownKey);
-    const dingSound = document.getElementById("dingSound");
+    document.getElementById('sapaan').textContent =
+      new Date().getHours() < 11 ? "Selamat pagi!" :
+      new Date().getHours() < 15 ? "Selamat siang!" :
+      new Date().getHours() < 18 ? "Selamat sore!" : "Selamat malam!";
 
-    if (!endTime) {
-      endTime = Date.now() + countdownDuration;
-      localStorage.setItem(countdownKey, endTime);
-    } else {
-      endTime = parseInt(endTime, 10);
-    }
-
-    const totalDuration = endTime - (Date.now());
-
-    let countdownDone = false;
-
+    const countdownEl = document.getElementById('countdown');
+    const targetDate = new Date().getTime() + 24 * 60 * 60 * 1000;
     function updateCountdown() {
-      const now = Date.now();
-      let distance = endTime - now;
-
-      if (distance <= 0 && !countdownDone) {
-        document.getElementById("days").textContent = "00";
-        document.getElementById("hours").textContent = "00";
-        document.getElementById("minutes").textContent = "00";
-        document.getElementById("seconds").textContent = "00";
-        document.getElementById("milliseconds").textContent = "000";
-        document.getElementById("progressBar").style.width = "100%";
-        dingSound.play();
-        countdownDone = true;
+      const now = new Date().getTime();
+      const diff = targetDate - now;
+      if (diff <= 0) {
+        countdownEl.innerText = "Event telah dimulai!";
         return;
       }
+      const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const s = Math.floor((diff % (1000 * 60)) / 1000);
+      countdownEl.innerText = `${h}j ${m}m ${s}d`;
+      requestAnimationFrame(updateCountdown);
+    }
+    updateCountdown();
 
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      const milliseconds = distance % 1000;
+    function updateIndonesianClocks() {
+      const now = new Date();
+      const opt = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+      document.getElementById("wib").textContent = "WIB (Jakarta): " + now.toLocaleTimeString("id-ID", { ...opt, timeZone: "Asia/Jakarta" });
+      document.getElementById("wita").textContent = "WITA (Makassar): " + now.toLocaleTimeString("id-ID", { ...opt, timeZone: "Asia/Makassar" });
+      document.getElementById("wit").textContent = "WIT (Jayapura): " + now.toLocaleTimeString("id-ID", { ...opt, timeZone: "Asia/Jayapura" });
+    }
+    setInterval(updateIndonesianClocks, 1000);
+    updateIndonesianClocks();
 
-      const percent = 100 - (distance / totalDuration * 100);
-      document.getElementById("progressBar").style.width = `${percent.toFixed(2)}%`;
-
-      document.getElementById("days").textContent = String(days).padStart(2, "0");
-      document.getElementById("hours").textContent = String(hours).padStart(2, "0");
-      document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
-      document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
-      document.getElementById("milliseconds").textContent = String(milliseconds).padStart(3, "0");
+    function toggleAudio() {
+      const music = document.getElementById('bgMusic');
+      music.paused ? music.play() : music.pause();
     }
 
-    setInterval(updateCountdown, 50);
+    document.getElementById("update-time").textContent = new Date().toLocaleString("id-ID");
   </script>
+
+  <!-- Tawk.to -->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/684cd03b47f3b9190b9ffeb1/1itm0qqrh';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+
 </body>
 </html>
