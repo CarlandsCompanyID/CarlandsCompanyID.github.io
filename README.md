@@ -367,7 +367,7 @@
   </section>
 
   <div class="form-section text-center my-8" data-aos="zoom-in" data-aos-duration="1000">
-    <h2 class="text-2xl font-semibold mb-4">📝 Pendaftaran Akun Pencoblosan [OPEN]</h2>
+    <h2 class="text-2xl font-semibold mb-4">📝 Pendaftaran Akun Pencoblosan [CLOSE CLOTER 1]</h2>
     <a href="https://forms.gle/1iyHNtXXghsjmqc9A" class="form-button text-lg" target="_blank">Buka Formulir</a>
   </div>
 
