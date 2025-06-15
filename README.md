@@ -14,8 +14,11 @@
       --accent-color: #FFD700;
       --text-color: #333;
       --background-color: #f4f4f4;
-      --glass-bg: rgba(255, 255, 255, 0.1);
-      --glass-border: rgba(255, 255, 255, 0.2);
+      --glass-bg: rgba(255, 255, 255, 0.15); /* Slightly more opaque for better readability */
+      --glass-border: rgba(255, 255, 255, 0.3);
+      --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2); /* Softer, wider shadow */
+      --neo-gradient-light: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+      --neo-gradient-dark: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
     }
 
     body {
@@ -24,35 +27,58 @@
       background-color: var(--background-color);
       color: var(--text-color);
       line-height: 1.6;
-      overflow-x: hidden; /* Mencegah scroll horizontal akibat animasi */
+      overflow-x: hidden;
+      background: linear-gradient(to right bottom, #e0e0e0, #ffffff, #e0e0e0); /* Soft background gradient */
+    }
+
+    /* NeoLux General Styling */
+    .neolux-card {
+      background: var(--glass-bg);
+      border-radius: 16px;
+      box-shadow: var(--glass-shadow);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid var(--glass-border);
+      transition: all 0.3s ease;
+    }
+
+    .neolux-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 48px 0 rgba(31, 38, 135, 0.3);
     }
 
     /* Dark mode */
     body.dark-mode {
-      background: linear-gradient(to right, #000000, #1f1f1f);
+      background: linear-gradient(to right bottom, #1a1a1a, #000000, #1a1a1a);
       color: #fff;
     }
     body.dark-mode header, body.dark-mode footer {
-      background-color: #1a1a1a;
+      background-color: rgba(0, 0, 0, 0.4);
       color: #eee;
     }
-    body.dark-mode section, body.dark-mode .warning {
-      background: #2a2a2a;
-      color: #fff;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    body.dark-mode .neolux-card {
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    }
+    body.dark-mode .neolux-card:hover {
+        box-shadow: 0 12px 48px 0 rgba(0, 0, 0, 0.7);
     }
     body.dark-mode .social-buttons a {
       color: #eee;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
     body.dark-mode .form-button {
       background-color: #555;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
     body.dark-mode .form-button:hover {
       background-color: #777;
     }
     body.dark-mode .clock {
-      background: #3a3a3a;
+      background: rgba(0, 0, 0, 0.3);
       color: #eee;
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
     body.dark-mode .dot.online { background-color: #66BB6A; }
     body.dark-mode .dot.offline { background-color: #EF5350; }
@@ -62,20 +88,24 @@
     body.dark-mode a {
       color: #8ab4f8; /* Biru terang untuk tautan di dark mode */
     }
+    body.dark-mode .marquee-container {
+      background: rgba(0, 0, 0, 0.5);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
 
     header, footer {
       background-color: var(--primary-color);
       color: #fff;
       text-align: center;
       padding: 1rem 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-    section, .warning {
+    .main-section {
       max-width: 900px;
       margin: 2rem auto;
-      background: #fff;
       padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
     .social-buttons a {
@@ -85,14 +115,16 @@
       gap: 0.5rem;
       margin: 0.5rem;
       padding: 0.75rem 1rem;
-      border-radius: 8px;
+      border-radius: 12px; /* Softer corners */
       font-weight: bold;
       color: #fff;
-      transition: transform 0.3s ease, opacity 0.3s ease;
+      transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     .social-buttons a:hover {
-      transform: translateY(-5px);
-      opacity: 0.9;
+      transform: translateY(-7px); /* More pronounced lift */
+      opacity: 0.95;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
     .youtube { background: #FF0000; }
     .instagram { background: #C13584; }
@@ -102,15 +134,18 @@
 
     .form-button {
       display: inline-block;
-      padding: 0.75rem 1.5rem;
+      padding: 0.9rem 2rem; /* Larger button */
       background-color: var(--secondary-color);
       color: white;
-      border-radius: 6px;
-      transition: background-color .3s ease, transform 0.2s ease;
+      border-radius: 12px; /* Softer corners */
+      transition: background-color .3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     .form-button:hover {
       background-color: #3367D6;
-      transform: translateY(-2px);
+      transform: translateY(-3px); /* More pronounced lift */
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
 
     /* Animasi */
@@ -125,22 +160,23 @@
     .marquee-container {
       width: 100%;
       overflow: hidden;
-      background: #121212;
+      background: rgba(0, 0, 0, 0.7); /* Darker background for contrast */
       padding: 20px 0;
-      border-top: 1px solid #333;
-      border-bottom: 1px solid #333;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      box-shadow: inset 0 0 15px rgba(0,0,0,0.3); /* Inner shadow for depth */
     }
     .marquee-text {
       display: inline-block;
       white-space: nowrap;
       font-size: 18px;
-      font-weight: 400;
+      font-weight: 600; /* Bolder text */
       background: linear-gradient(90deg, #00f7ff, #865dff, #ff5ea5, #00f7ff);
       background-size: 400% auto;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: scroll 60s linear infinite, gradientShift 12s ease-in-out infinite;
-      text-shadow: 0 0 4px rgba(255,255,255,0.05);
+      text-shadow: 0 0 8px rgba(255,255,255,0.2); /* More prominent text shadow */
       padding-left: 100%; /* Mulai dari luar layar */
     }
     @keyframes scroll {
@@ -158,15 +194,17 @@
     }
 
     .clock {
-      background: #ffffff;
+      background: rgba(255, 255, 255, 0.4);
       padding: 20px;
       margin: 10px auto;
       width: 90%;
       max-width: 300px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-radius: 15px;
       font-size: 1.2em;
       text-align: center;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
     }
     @media (min-width: 768px) {
       .clock-grid {
@@ -189,7 +227,19 @@
       font-family: Arial, sans-serif;
       justify-content: center;
       margin: 20px auto;
+      padding: 10px 20px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      backdrop-filter: blur(5px);
     }
+    body.dark-mode .status {
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
     .dot {
       height: 12px;
       width: 12px;
@@ -203,7 +253,7 @@
     @media (max-width: 768px) {
       .text-5xl { font-size: 2.5rem; }
       .text-2xl { font-size: 1.5rem; }
-      section, .warning {
+      .main-section {
         margin: 1rem auto;
         padding: 1.5rem;
       }
@@ -217,7 +267,7 @@
     @media (max-width: 480px) {
       .text-5xl { font-size: 2rem; }
       .text-2xl { font-size: 1.25rem; }
-      section, .warning {
+      .main-section {
         padding: 1rem;
       }
       .social-buttons a {
@@ -249,12 +299,13 @@
         font-size: 1.5rem;
         cursor: pointer;
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        transition: background-color 0.3s, transform 0.3s;
+        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
         z-index: 1000;
     }
     .dark-mode-toggle:hover {
         background-color: #004d99;
         transform: scale(1.1);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.3);
     }
   </style>
 </head>
@@ -267,7 +318,7 @@
     </div>
   </header>
 
-  <section class="fade-in text-center" data-aos="fade-up" data-aos-duration="1000">
+  <section class="neolux-card main-section text-center" data-aos="fade-up" data-aos-duration="1000">
     <div class="text-5xl mb-4">👋👋</div>
     <h2 id="sapaan" class="text-2xl font-semibold mb-2"></h2>
     <p class="text-gray-700 mb-4">Selamat datang di situs resmi kami. Semoga hari Anda menyenangkan dan penuh produktivitas.</p>
@@ -280,7 +331,7 @@
     </div>
   </div>
 
-  <section data-aos="fade-right" data-aos-duration="1200">
+  <section class="neolux-card main-section" data-aos="fade-right" data-aos-duration="1200">
     <h2 class="text-2xl font-semibold mb-4">🎯 Misi Kami</h2>
     <p>Mengembangkan game berkualitas tinggi dengan cerita, gameplay, dan fitur yang orisinal serta menarik bagi berbagai kalangan.
        Mendukung kreativitas dan talenta lokal dalam industri game melalui kolaborasi, pelatihan, dan pengembangan tim internal.
@@ -295,7 +346,7 @@
     </ul>
   </section>
 
-  <section data-aos="fade-up" data-aos-duration="1200">
+  <section class="neolux-card main-section" data-aos="fade-up" data-aos-duration="1200">
     <h2 class="text-2xl font-semibold mb-4">🤝 Bergabunglah Bersama Kami</h2>
     <p class="mb-2">🎮 Gabung Bersama CarlandsCompanyID! 🚀</p>
     <p class="mb-2">Apakah kamu punya semangat untuk menciptakan dunia game yang seru, inovatif, dan penuh tantangan?</p>
@@ -331,7 +382,7 @@
     </div>
   </div>
 
-  <section class="text-center" data-aos="zoom-in" data-aos-duration="1000">
+  <section class="neolux-card main-section text-center" data-aos="zoom-in" data-aos-duration="1000">
     <h2 class="text-2xl font-semibold my-4">Jam Digital Seluruh Indonesia</h2>
     <div class="clock-grid">
       <div class="clock" id="wib">WIB (Jakarta): </div>
@@ -340,7 +391,7 @@
     </div>
   </section>
 
-  <section id="contact" class="text-center" data-aos="fade-up" data-aos-duration="1200">
+  <section id="contact" class="neolux-card main-section text-center" data-aos="fade-up" data-aos-duration="1200">
     <h2 class="text-2xl font-semibold mb-4">Kontak Kami</h2>
     <p>Hai, butuh bantuan atau ingin bekerja sama dengan <strong>CarlandsCompanyID</strong>? Kami menunggu kabar darimu!</p>
     <p class="mt-4 font-semibold">Email Utama:</p>
@@ -353,7 +404,7 @@
     <span>Sedang Online</span>
   </div>
 
-  <div class="warning mx-4 my-6 text-center text-sm" data-aos="flip-up" data-aos-duration="1000">
+  <div class="warning neolux-card mx-4 my-6 text-center text-sm p-4" data-aos="flip-up" data-aos-duration="1000">
     <strong>⚠️ Peringatan:</strong> Ini adalah <strong>situs resmi</strong> milik CarlandsCompanyID. Situs selain <code>carlandscompanyid</code> adalah <strong>tidak resmi atau palsu</strong>.
   </div>
 
@@ -367,15 +418,14 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
-      once: true, // Animasi hanya terjadi sekali saat discroll
-      offset: 100, // Offset dari titik pemicu asli
-      duration: 800, // Durasi animasi (ms)
-      easing: 'ease-in-out', // Jenis easing animasi AOS
+      once: true,
+      offset: 100,
+      duration: 800,
+      easing: 'ease-in-out',
     });
 
     lucide.createIcons();
 
-    // Sapaan Selamat Pagi/Siang/Sore/Malam
     function dapatkanSapaanFormal() {
       const jam = new Date().getHours();
       return jam < 11 ? "Selamat pagi!" :
@@ -384,13 +434,11 @@
     }
     document.getElementById('sapaan').textContent = dapatkanSapaanFormal();
 
-    // Marquee touch pause/play
     const marquee = document.getElementById('marquee');
     marquee.addEventListener('touchstart', () => {
       marquee.querySelector('.marquee-text').classList.toggle('paused');
     });
 
-    // Perbarui Jam Indonesia
     function updateIndonesianClocks() {
       const now = new Date();
       const options = {
@@ -413,20 +461,17 @@
     setInterval(updateIndonesianClocks, 1000);
     updateIndonesianClocks();
 
-    // Waktu terakhir diperbarui
     const updateTime = new Date();
     document.getElementById("update-time").textContent = updateTime.toLocaleString("id-ID");
 
-    // Toggle Dark Mode
     const darkModeToggle = document.getElementById('darkModeToggle');
     darkModeToggle.addEventListener('click', () => {
       document.body.classList.toggle('dark-mode');
       const isDarkMode = document.body.classList.contains('dark-mode');
       localStorage.setItem('darkMode', isDarkMode);
-      darkModeToggle.textContent = isDarkMode ? '☀️' : '💡'; // Ubah ikon
+      darkModeToggle.textContent = isDarkMode ? '☀️' : '💡';
     });
 
-    // Periksa preferensi dark mode saat halaman dimuat
     window.onload = () => {
       if (localStorage.getItem('darkMode') === 'true') {
         document.body.classList.add('dark-mode');
