@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -84,8 +85,7 @@
             border: 1px solid #2d3748;
             border-radius: 12px;
             padding: 25px;
-            width: 90%;
-            max-width: 500px;
+            width: 100%; /* Lebar akan diatur oleh grid parent */
             margin: auto;
         }
         .themed-container h2 {
@@ -95,8 +95,13 @@
             padding-bottom: 15px;
             margin-top: 0;
             letter-spacing: 1px;
-            font-size: 1.5rem; /* 24px */
+            font-size: 1.25rem; /* Ukuran font disesuaikan */
             font-weight: 700;
+        }
+        @media (min-width: 768px) { /* md breakpoint */
+             .themed-container h2 {
+                font-size: 1.5rem;
+             }
         }
         .partnership-list {
             list-style: none;
@@ -177,17 +182,16 @@
 
     <!-- Header / Navbar -->
     <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
             <a href="#" class="text-xl font-bold text-white">CarlandsCompanyID</a>
             
-            <nav class="hidden md:flex space-x-8">
+            <nav class="hidden md:flex space-x-6 lg:space-x-8">
                 <a href="#beranda" class="text-gray-300 hover:text-white transition-colors duration-300">Beranda</a>
                 <a href="#misi" class="text-gray-300 hover:text-white transition-colors duration-300">Misi</a>
                 <a href="#layanan" class="text-gray-300 hover:text-white transition-colors duration-300">Layanan</a>
                 <a href="#gabung" class="text-gray-300 hover:text-white transition-colors duration-300">Gabung</a>
                 <a href="#kontak" class="text-gray-300 hover:text-white transition-colors duration-300">Kontak</a>
-                <a href="#partnership" class="text-gray-300 hover:text-white transition-colors duration-300">Kemitraan</a>
-                <a href="#feedback" class="text-gray-300 hover:text-white transition-colors duration-300">Masukan</a>
+                <a href="#info" class="text-gray-300 hover:text-white transition-colors duration-300">Info</a>
             </nav>
 
             <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
@@ -196,25 +200,25 @@
         </div>
         
         <div id="mobile-menu" class="hidden md:hidden bg-gray-900">
-            <a href="#beranda" class="block py-2 px-6 text-gray-300 hover:bg-gray-800">Beranda</a>
-            <a href="#misi" class="block py-2 px-6 text-gray-300 hover:bg-gray-800">Misi</a>
-            <a href="#layanan" class="block py-2 px-6 text-gray-300 hover:bg-gray-800">Layanan</a>
-            <a href="#gabung" class="block py-2 px-6 text-gray-300 hover:bg-gray-800">Gabung</a>
-            <a href="#kontak" class="block py-2 px-6 text-gray-300 hover:bg-gray-800">Kontak</a>
-            <a href="#partnership" class="block py-2 px-6 text-gray-300 hover:bg-gray-800">Kemitraan</a>
-            <a href="#feedback" class="block py-2 px-6 text-gray-300 hover:bg-gray-800">Masukan</a>
+            <a href="#beranda" class="block py-3 px-6 text-gray-300 hover:bg-gray-800">Beranda</a>
+            <a href="#misi" class="block py-3 px-6 text-gray-300 hover:bg-gray-800">Misi</a>
+            <a href="#layanan" class="block py-3 px-6 text-gray-300 hover:bg-gray-800">Layanan</a>
+            <a href="#gabung" class="block py-3 px-6 text-gray-300 hover:bg-gray-800">Gabung</a>
+            <a href="#kontak" class="block py-3 px-6 text-gray-300 hover:bg-gray-800">Kontak</a>
+            <a href="#info" class="block py-3 px-6 text-gray-300 hover:bg-gray-800">Info Lain</a>
         </div>
     </header>
 
     <main>
         <!-- Section 1: Beranda (Hero Section) -->
-        <section id="beranda" class="min-h-screen flex items-center justify-center hero-gradient">
-            <div class="container mx-auto px-6 text-center">
+        <section id="beranda" class="min-h-screen flex items-center justify-center hero-gradient px-4">
+            <div class="container mx-auto text-center">
                 <div class="reveal">
-                    <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-4">
+                    <!-- Responsive Font Size -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-white leading-tight mb-4">
                         👋👋 Selamat datang!
                     </h1>
-                    <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+                    <p class="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto">
                         Selamat datang di situs resmi kami. Semoga hari Anda menyenangkan dan penuh produktivitas.
                     </p>
                     <div class="mt-8 text-gray-400 text-sm tracking-widest uppercase">
@@ -235,10 +239,10 @@
         </section>
 
         <!-- Section 2: Pendaftaran -->
-        <section id="pendaftaran" class="py-20 bg-gray-900">
-             <div class="container mx-auto px-6">
-                <div class="reveal card p-8 md:p-12 text-center max-w-4xl mx-auto">
-                    <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">📝 Pendaftaran Akun Pencoblosan</h2>
+        <section id="pendaftaran" class="py-16 sm:py-20 md:py-24 bg-gray-900">
+             <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+                <div class="reveal card p-6 sm:p-8 md:p-12 text-center max-w-4xl mx-auto">
+                    <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-3">📝 Pendaftaran Akun Pencoblosan</h2>
                     <p class="text-red-400 font-bold text-lg mb-6">[CLOSE CLOTER 1]</p>
                     <p class="text-gray-300 mb-8">Pendaftaran untuk kloter pertama saat ini telah ditutup. Nantikan informasi selanjutnya untuk pembukaan kloter berikutnya. Terima kasih atas antusiasme Anda!</p>
                     <a href="https://forms.gle/croHjnC3FR4rZpbSA" target="_blank" rel="noopener noreferrer" class="btn-secondary font-bold py-3 px-8 rounded-full text-lg inline-block cursor-not-allowed opacity-60">
@@ -249,26 +253,26 @@
         </section>
 
         <!-- Section 3: Misi Kami -->
-        <section id="misi" class="py-20 md:py-32">
-            <div class="container mx-auto px-6">
-                <div class="reveal text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white">🎯 Misi Kami</h2>
+        <section id="misi" class="py-16 sm:py-20 md:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+                <div class="reveal text-center mb-12 md:mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">🎯 Misi Kami</h2>
                     <div class="w-24 h-1 bg-indigo-500 mx-auto mt-4"></div>
                 </div>
-                <div class="reveal max-w-5xl mx-auto space-y-8">
-                    <p class="text-gray-300 text-center md:text-lg">Mengembangkan game berkualitas tinggi dengan cerita, gameplay, dan fitur yang orisinal serta menarik bagi berbagai kalangan. Mendukung kreativitas dan talenta lokal dalam industri game melalui kolaborasi, pelatihan, dan pengembangan tim internal. Membangun komunitas game yang inklusif dan sehat, di mana pemain merasa dihargai, aman, dan memiliki ruang untuk berekspresi. Menggunakan teknologi terbaru untuk menciptakan pengalaman bermain yang responsif, realistis, dan inovatif. Mewujudkan pertumbuhan berkelanjutan baik dari sisi produk maupun kontribusi terhadap industri kreatif di Indonesia.</p>
+                <div class="reveal max-w-5xl mx-auto">
+                    <p class="text-gray-300 text-center text-base sm:text-lg">Mengembangkan game berkualitas tinggi dengan cerita, gameplay, dan fitur yang orisinal serta menarik bagi berbagai kalangan. Mendukung kreativitas dan talenta lokal dalam industri game melalui kolaborasi, pelatihan, dan pengembangan tim internal. Membangun komunitas game yang inklusif dan sehat, di mana pemain merasa dihargai, aman, dan memiliki ruang untuk berekspresi. Menggunakan teknologi terbaru untuk menciptakan pengalaman bermain yang responsif, realistis, dan inovatif. Mewujudkan pertumbuhan berkelanjutan baik dari sisi produk maupun kontribusi terhadap industri kreatif di Indonesia.</p>
                 </div>
             </div>
         </section>
 
         <!-- Section 4: Apa yang Kami Tawarkan -->
-        <section id="layanan" class="py-20 md:py-32 bg-black bg-opacity-20">
-            <div class="container mx-auto px-6">
-                <div class="reveal text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white">🚀 Apa yang Kami Tawarkan</h2>
+        <section id="layanan" class="py-16 sm:py-20 md:py-24 bg-black bg-opacity-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+                <div class="reveal text-center mb-12 md:mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">🚀 Apa yang Kami Tawarkan</h2>
                     <div class="w-24 h-1 bg-indigo-500 mx-auto mt-4"></div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="reveal card rounded-lg p-8 text-center">
                         <div class="text-5xl mb-4">🌟</div>
                         <h3 class="text-xl font-bold text-white mb-2">Pengembangan Game & Roleplay Server</h3>
@@ -277,7 +281,7 @@
                         <div class="text-5xl mb-4">💼</div>
                         <h3 class="text-xl font-bold text-white mb-2">Layanan Digital & Kreatif</h3>
                     </div>
-                    <div class="reveal card rounded-lg p-8 text-center">
+                    <div class="reveal card rounded-lg p-8 text-center sm:col-span-2 lg:col-span-1">
                          <div class="text-5xl mb-4">🛠️</div>
                         <h3 class="text-xl font-bold text-white mb-2">Inovasi Teknologi Masa Depan</h3>
                     </div>
@@ -286,21 +290,21 @@
         </section>
         
         <!-- Section 5: Bergabunglah Bersama Kami -->
-        <section id="gabung" class="py-20 md:py-32">
-            <div class="container mx-auto px-6">
-                 <div class="reveal text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white">🤝 Bergabunglah Bersama Kami</h2>
+        <section id="gabung" class="py-16 sm:py-20 md:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+                 <div class="reveal text-center mb-12 md:mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">🤝 Bergabunglah Bersama Kami</h2>
                     <div class="w-24 h-1 bg-indigo-500 mx-auto mt-4"></div>
                 </div>
-                <div class="reveal max-w-4xl mx-auto bg-gray-900 rounded-lg p-8 md:p-12 text-center border border-gray-700">
-                    <h3 class="text-2xl md:text-3xl font-bold text-indigo-400 mb-4">🎮 Gabung Bersama CarlandsCompanyID! 🚀</h3>
+                <div class="reveal max-w-4xl mx-auto bg-gray-900 rounded-lg p-6 sm:p-8 md:p-12 text-center border border-gray-700">
+                    <h3 class="text-2xl sm:text-3xl font-bold text-indigo-400 mb-4">🎮 Gabung Bersama CarlandsCompanyID! 🚀</h3>
                     <p class="text-gray-300 mb-6">Apakah kamu punya semangat untuk menciptakan dunia game yang seru, inovatif, dan penuh tantangan? Di CarlandsCompanyID, kami bukan hanya membuat game — kami membangun pengalaman, komunitas, dan masa depan industri game Indonesia!</p>
                     <h4 class="text-xl font-semibold text-white mt-8 mb-4">✨ Mengapa bergabung dengan kami?</h4>
                     <ul class="text-gray-300 space-y-2 inline-block text-left mb-8">
-                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Lingkungan kreatif dan kolaboratif</li>
-                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Proyek game yang seru dan penuh potensi</li>
-                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Kesempatan berkembang bersama tim profesional</li>
-                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Dukungan penuh untuk ide dan inovasi kamu</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Lingkungan kreatif dan kolaboratif</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Proyek game yang seru dan penuh potensi</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Kesempatan berkembang bersama tim profesional</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Dukungan penuh untuk ide dan inovasi kamu</li>
                     </ul>
                     <p class="text-gray-300 mb-6">💡Baik kamu developer, desainer, storyteller, content creator, atau gamers yang ingin berkarya — ini saatnya kamu ambil peran!</p>
                     <p class="text-white font-semibold mb-2">📩 Yuk, kirim portofolio atau kenalan dulu dengan tim kami!</p>
@@ -311,69 +315,68 @@
         </section>
 
         <!-- Section 6: Kontak -->
-        <section id="kontak" class="py-20 md:py-32 bg-black bg-opacity-20">
-            <div class="container mx-auto px-6">
-                <div class="reveal text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white">Kontak Kami</h2>
+        <section id="kontak" class="py-16 sm:py-20 md:py-24 bg-black bg-opacity-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+                <div class="reveal text-center mb-12 md:mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">Kontak Kami</h2>
                      <div class="w-24 h-1 bg-indigo-500 mx-auto mt-4"></div>
                 </div>
                 <div class="reveal max-w-2xl mx-auto text-center">
                     <p class="text-gray-300 mb-8">Hai, butuh bantuan atau ingin bekerja sama dengan CarlandsCompanyID? Kami menunggu kabar darimu! Jangan ragu untuk mengirimkan pertanyaan, saran, atau sekadar menyapa. Kami akan membalas secepat mungkin!</p>
                     <div class="bg-gray-800 border border-gray-700 rounded-lg p-6 inline-block">
                         <p class="text-gray-400">Email Utama:</p>
-                        <a href="mailto:carlandscompanyid@gmail.com" class="text-xl text-indigo-300 hover:text-indigo-200">carlandscompanyid@gmail.com</a>
+                        <a href="mailto:carlandscompanyid@gmail.com" class="text-xl text-indigo-300 hover:text-indigo-200 break-all">carlandscompanyid@gmail.com</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 7: Partnership -->
-        <section id="partnership" class="py-20 md:py-32">
-            <div class="container mx-auto px-6">
-                <div class="reveal">
-                     <div class="themed-container">
-                        <h2>CARLANDSCOMPANYID PARTNERSHIP</h2>
-                        <ul class="partnership-list">
-                            <li class="partner-slot filled">RSLP OFFICIAL</li>
-                            <li class="partner-slot">[ SLOT KOSONG ]</li>
-                            <li class="partner-slot">[ SLOT KOSONG ]</li>
-                            <li class="partner-slot">[ SLOT KOSONG ]</li>
-                            <li class="partner-slot">[ SLOT KOSONG ]</li>
-                            <li class="partner-slot">[ SLOT KOSONG ]</li>
-                            <li class="partner-slot">[ SLOT KOSONG ]</li>
-                            <li class="partner-slot">[ SLOT KOSONG ]</li>
-                        </ul>
+        <!-- Section 7: Info Lainnya (Partnership & Feedback) -->
+        <section id="info" class="py-16 sm:py-20 md:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+                <!-- Responsive Grid: 1 kolom di mobile, 2 kolom di tablet/desktop -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+                    <!-- Partnership Column -->
+                    <div class="reveal">
+                         <div class="themed-container h-full">
+                            <h2>CARLANDSCOMPANYID PARTNERSHIP</h2>
+                            <ul class="partnership-list">
+                                <li class="partner-slot filled">RSLP OFFICIAL</li>
+                                <li class="partner-slot">[ SLOT KOSONG ]</li>
+                                <li class="partner-slot">[ SLOT KOSONG ]</li>
+                                <li class="partner-slot">[ SLOT KOSONG ]</li>
+                                <li class="partner-slot">[ SLOT KOSONG ]</li>
+                                <li class="partner-slot">[ SLOT KOSONG ]</li>
+                                <li class="partner-slot">[ SLOT KOSONG ]</li>
+                                <li class="partner-slot">[ SLOT KOSONG ]</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 8: Feedback Form -->
-        <section id="feedback" class="py-20 md:py-32 bg-black bg-opacity-20">
-            <div class="container mx-auto px-6">
-                <div class="reveal">
-                    <div class="themed-container feedback-form">
-                        <h2>Formulir Masukan</h2>
-                        <form id="feedbackForm" class="mt-6">
-                            <div class="form-group">
-                                <label for="nama">Nama Anda (Opsional)</label>
-                                <input type="text" id="nama" name="nama" placeholder="Contoh: Budi">
-                            </div>
-                            <div class="form-group">
-                                <label for="tipe">Jenis Masukan</label>
-                                <select id="tipe" name="tipe" required>
-                                    <option value="Saran" data-color="3447003">💡 Saran</option>
-                                    <option value="Kritik" data-color="16705372">⚠️ Kritik</option>
-                                    <option value="Laporan Bug" data-color="15548997">🐞 Laporan Bug</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="pesan">Pesan Anda</label>
-                                <textarea id="pesan" name="pesan" placeholder="Tuliskan detail pesan Anda di sini..." required></textarea>
-                            </div>
-                            <button type="submit" id="submitButton">Kirim Masukan</button>
-                        </form>
-                        <div id="responseMessage"></div>
+                    <!-- Feedback Form Column -->
+                    <div class="reveal">
+                        <div class="themed-container feedback-form h-full">
+                            <h2>Formulir Masukan</h2>
+                            <form id="feedbackForm" class="mt-6">
+                                <div class="form-group">
+                                    <label for="nama">Nama Anda (Opsional)</label>
+                                    <input type="text" id="nama" name="nama" placeholder="Contoh: Budi">
+                                </div>
+                                <div class="form-group">
+                                    <label for="tipe">Jenis Masukan</label>
+                                    <select id="tipe" name="tipe" required>
+                                        <option value="Saran" data-color="3447003">💡 Saran</option>
+                                        <option value="Kritik" data-color="16705372">⚠️ Kritik</option>
+                                        <option value="Laporan Bug" data-color="15548997">🐞 Laporan Bug</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pesan">Pesan Anda</label>
+                                    <textarea id="pesan" name="pesan" placeholder="Tuliskan detail pesan Anda di sini..." required></textarea>
+                                </div>
+                                <button type="submit" id="submitButton">Kirim Masukan</button>
+                            </form>
+                            <div id="responseMessage"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -383,10 +386,10 @@
     
     <!-- Footer -->
     <footer class="bg-gray-900 border-t border-gray-800">
-        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
-            <div class="max-w-3xl mx-auto bg-yellow-900 bg-opacity-20 border border-yellow-700 rounded-lg p-4 mb-8 flex items-center justify-center space-x-3">
-                <svg class="w-6 h-6 text-yellow-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-                <p class="text-yellow-200 text-sm"><strong>Peringatan:</strong> Ini adalah situs resmi milik CarlandsCompanyID. Situs selain ini adalah tidak resmi atau palsu.</p>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-gray-400">
+            <div class="max-w-3xl mx-auto bg-yellow-900 bg-opacity-20 border border-yellow-700 rounded-lg p-4 mb-8 flex items-start sm:items-center justify-center space-x-3">
+                <svg class="w-8 h-8 sm:w-6 sm:h-6 text-yellow-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                <p class="text-yellow-200 text-sm text-left sm:text-center"><strong>Peringatan:</strong> Ini adalah situs resmi milik CarlandsCompanyID. Situs selain ini adalah tidak resmi atau palsu.</p>
             </div>
             <p>&copy; 2025 CarlandsCompanyID. Semua Hak Dilindungi.</p>
         </div>
@@ -500,3 +503,4 @@
     </script>
 </body>
 </html>
+```
