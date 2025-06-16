@@ -512,7 +512,7 @@
                 const embedColor = selectedOption.getAttribute('data-color');
 
                 const payload = {
-                    username: "Feedback Bot",
+                    username: "AnomaliJualanAgama",
                     avatar_url: "https://i.imgur.com/4M34hi2.png",
                     embeds: [{
                         title: `Masukan Baru: ${tipeMasukan}`,
