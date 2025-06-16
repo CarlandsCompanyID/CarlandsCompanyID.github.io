@@ -348,7 +348,8 @@
                             <h2>CARLANDSCOMPANYID PARTNERSHIP</h2>
                             <ul class="partnership-list">
                                 <li class="partner-slot filled">RSLP OFFICIAL</li>
-                                <li class="partner-slot">[ SLOT KOSONG ]</li>
+                                <li class="partner-slot">[ NKRP ]</li>
+                                <li class="partner-slot filled">NKRP</li>
                                 <li class="partner-slot">[ SLOT KOSONG ]</li>
                                 <li class="partner-slot">[ SLOT KOSONG ]</li>
                                 <li class="partner-slot">[ SLOT KOSONG ]</li>
@@ -371,8 +372,12 @@
                                     <label for="tipe">Jenis Masukan</label>
                                     <select id="tipe" name="tipe" required>
                                         <option value="Saran" data-color="3447003">💡 Saran</option>
+                                        <option value="Saran" data-color="3447003"> 🤝 Kerjasama</option>
                                         <option value="Kritik" data-color="16705372">⚠️ Kritik</option>
-                                        <option value="Laporan Bug" data-color="15548997">🐞 Laporan Bug</option>
+                                        <option value="Laporan Bug" data-color="15548997">⚠️ Laporan Bug</option>
+                                        <option value="Kritik" data-color="16705372">⚠️ Laporan orang mencurigakan</option>
+                                        <option value="Kritik" data-color="16705372">⚠️ Laporan Penipu</option>
+                                        <option value="Laporan Bug" data-color="15548997">⚠️ Laporan Pelanggaran Grup whatsapp / discord</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
