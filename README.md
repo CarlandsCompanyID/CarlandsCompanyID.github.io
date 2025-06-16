@@ -84,7 +84,7 @@
             border: 1px solid #2d3748;
             border-radius: 12px;
             padding: 25px;
-            width: 100%; /* Lebar akan diatur oleh grid parent */
+            width: 100%;
             margin: auto;
         }
         .themed-container h2 {
@@ -175,6 +175,32 @@
             margin-top: 20px;
             font-weight: bold;
         }
+
+        /* Social Media Link Styling */
+        .social-link {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            color: #cbd5e1;
+            font-weight: 600;
+            transition: all 0.2s ease-in-out;
+        }
+        .social-link:hover {
+            background-color: #334155;
+            color: #ffffff;
+            transform: translateY(-2px);
+            border-color: #4f46e5;
+        }
+        .social-link svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-right: 0.75rem;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -189,8 +215,8 @@
                 <a href="#misi" class="text-gray-300 hover:text-white transition-colors duration-300">Misi</a>
                 <a href="#layanan" class="text-gray-300 hover:text-white transition-colors duration-300">Layanan</a>
                 <a href="#gabung" class="text-gray-300 hover:text-white transition-colors duration-300">Gabung</a>
-                <a href="#kontak" class="text-gray-300 hover:text-white transition-colors duration-300">Kontak</a>
                 <a href="#info" class="text-gray-300 hover:text-white transition-colors duration-300">Info</a>
+                <a href="#media-sosial" class="text-gray-300 hover:text-white transition-colors duration-300">Media Sosial</a>
             </nav>
 
             <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
@@ -203,8 +229,8 @@
             <a href="#misi" class="block py-3 px-6 text-gray-300 hover:bg-gray-800">Misi</a>
             <a href="#layanan" class="block py-3 px-6 text-gray-300 hover:bg-gray-800">Layanan</a>
             <a href="#gabung" class="block py-3 px-6 text-gray-300 hover:bg-gray-800">Gabung</a>
-            <a href="#kontak" class="block py-3 px-6 text-gray-300 hover:bg-gray-800">Kontak</a>
             <a href="#info" class="block py-3 px-6 text-gray-300 hover:bg-gray-800">Info Lain</a>
+            <a href="#media-sosial" class="block py-3 px-6 text-gray-300 hover:bg-gray-800">Media Sosial</a>
         </div>
     </header>
 
@@ -213,7 +239,6 @@
         <section id="beranda" class="min-h-screen flex items-center justify-center hero-gradient px-4">
             <div class="container mx-auto text-center">
                 <div class="reveal">
-                    <!-- Responsive Font Size -->
                     <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-white leading-tight mb-4">
                         👋👋 Selamat datang!
                     </h1>
@@ -313,27 +338,9 @@
             </div>
         </section>
 
-        <!-- Section 6: Kontak -->
-        <section id="kontak" class="py-16 sm:py-20 md:py-24 bg-black bg-opacity-20">
+        <!-- Section 6: Info Lainnya (Partnership & Feedback) -->
+        <section id="info" class="py-16 sm:py-20 md:py-24 bg-black bg-opacity-20">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-                <div class="reveal text-center mb-12 md:mb-16">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-white">Kontak Kami</h2>
-                     <div class="w-24 h-1 bg-indigo-500 mx-auto mt-4"></div>
-                </div>
-                <div class="reveal max-w-2xl mx-auto text-center">
-                    <p class="text-gray-300 mb-8">Hai, butuh bantuan atau ingin bekerja sama dengan CarlandsCompanyID? Kami menunggu kabar darimu! Jangan ragu untuk mengirimkan pertanyaan, saran, atau sekadar menyapa. Kami akan membalas secepat mungkin!</p>
-                    <div class="bg-gray-800 border border-gray-700 rounded-lg p-6 inline-block">
-                        <p class="text-gray-400">Email Utama:</p>
-                        <a href="mailto:carlandscompanyid@gmail.com" class="text-xl text-indigo-300 hover:text-indigo-200 break-all">carlandscompanyid@gmail.com</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 7: Info Lainnya (Partnership & Feedback) -->
-        <section id="info" class="py-16 sm:py-20 md:py-24">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-                <!-- Responsive Grid: 1 kolom di mobile, 2 kolom di tablet/desktop -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
                     <!-- Partnership Column -->
                     <div class="reveal">
@@ -377,6 +384,49 @@
                             <div id="responseMessage"></div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Media Sosial -->
+        <section id="media-sosial" class="py-16 sm:py-20 md:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+                <div class="reveal text-center mb-12 md:mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">Ikuti Kami</h2>
+                    <div class="w-24 h-1 bg-indigo-500 mx-auto mt-4"></div>
+                    <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Terhubung dengan kami melalui media sosial untuk mendapatkan info terbaru, pengumuman, dan menjadi bagian dari komunitas kami.</p>
+                </div>
+                <div class="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                    <!-- YouTube -->
+                    <a href="https://www.youtube.com/@carlandsid" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        <span>YouTube</span>
+                    </a>
+                    <!-- TikTok -->
+                    <a href="https://www.tiktok.com/@carlandscompanyid/" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.01-1.58-.01-3.18-.01-4.75-.26.03-.53.05-.78.08v6.2c0 2.51-1.34 4.84-3.57 6.14-2.23 1.3-4.99 1.1-7.15-.4-2.16-1.5-3.57-3.8-3.57-6.29v-2.89c.7.43 1.5.68 2.29.68.81 0 1.59-.27 2.29-.76v-6.5h3.91z"/></svg>
+                        <span>TikTok</span>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/carlandscompanyid/" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.644-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.359 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.947s-.014-3.667-.072-4.947c-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"/></svg>
+                        <span>Instagram</span>
+                    </a>
+                    <!-- WhatsApp 1 -->
+                    <a href="https://chat.whatsapp.com/Gmc3109bU4j1jy4pRPEgMc" target="_blank" rel="noopener noreferrer" class="social-link">
+                       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 4.315 1.847 6.062l-1.011 3.697 3.824-1.004zm6.278-6.002c-.312-.157-1.84-1.04-2.126-1.164s-.495-.157-.704.157c-.208.312-.799.987-.98 1.164-.182.176-.364.195-.663.039-.3-.156-1.432-.533-2.723-1.684-1.002-.88-1.67-1.97-1.869-2.314s-.208-.51-.01-1.002c.176-.438.396-.723.595-.967.2-.245.3-.408.457-.682.157-.274.078-.518-.04-.675-.117-.157-.704-1.684-.96-2.292-.255-.607-.523-.523-.704-.534-.182-.01-.364-.01-.546-.01s-.486.078-.732.39c-.246.312-.951 1.164-1.187 2.152-.237.988-.237 1.943.04 2.199.277.255.986 1.152 2.25 2.136 1.261.984 2.275 1.549 2.772 1.819.5.27 1.164.237 1.684.156.52-.08 1.84-.75 2.106-1.464.265-.715.265-1.33.187-1.464s-.157-.237-.312-.39z"/></svg>
+                        <span>Grup WhatsApp</span>
+                    </a>
+                    <!-- WhatsApp 2 -->
+                    <a href="https://chat.whatsapp.com/EoyF4WTKUHB1feKjRdowss" target="_blank" rel="noopener noreferrer" class="social-link">
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10c1.465 0 2.865-.327 4.144-.928l.192.115c.983.585 2.029.985 3.12 1.166l-.286-1.713c.4-.64.71-1.341.92-2.083l.115-.192C21.673 14.865 22 13.465 22 12c0-5.514-4.486-10-10-10zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/><path d="M15.293 14.707a.999.999 0 00-1.414 0L12 16.586l-1.879-1.879a.999.999 0 10-1.414 1.414L10.586 18l-1.879 1.879a.999.999 0 101.414 1.414L12 19.414l1.879 1.879a.999.999 0 101.414-1.414L13.414 18l1.879-1.879a.999.999 0 000-1.414zM8 7h8v2H8zM8 11h8v2H8z"/></svg>
+                        <span>Komunitas WhatsApp</span>
+                    </a>
+                    <!-- Email -->
+                    <a href="mailto:carlandscompanyid@gmail.com" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.223V6h16zM4 18V9.044l7.386 5.763a.998.998 0 001.228 0L20 9.044V18H4z"/></svg>
+                        <span>Email</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -502,17 +552,3 @@
     </script>
 </body>
 </html>
-```
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/684cd03b47f3b9190b9ffeb1/1itm0qqrh';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
