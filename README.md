@@ -348,7 +348,6 @@
                             <h2>CARLANDSCOMPANYID PARTNERSHIP</h2>
                             <ul class="partnership-list">
                                 <li class="partner-slot filled">RSLP OFFICIAL</li>
-                                <li class="partner-slot">[ NKRP ]</li>
                                 <li class="partner-slot filled">NKRP</li>
                                 <li class="partner-slot">[ SLOT KOSONG ]</li>
                                 <li class="partner-slot">[ SLOT KOSONG ]</li>
